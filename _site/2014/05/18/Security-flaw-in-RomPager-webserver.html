@@ -33,7 +33,7 @@
 						<a href="/index.html">Home</a>
 					</li>
 				
-					<li class="active">
+					<li >
 						<a href="/blog.html">Blog</a>
 					</li>
 				
@@ -44,23 +44,25 @@
 
 	<!-- Real body -->
 	<div class="container">
-		<ul>
-	
-		<li>
-			<a href="/2014/05/18/Security-flaw-in-RomPager-webserver.html">Security flaw in rompager webserver</a>
-			18 May 2014
-			<p>RomPager is a widely used embedded webserver. Playing around with an quite old but very widely used (or at least in Spain) ZyXEL P-660HW-D1 I could find an small bug in this software that leads to XSS and URL redirection.</p>
+		Security flaw in RomPager webserver
+		18 May 2014
+		
+			<br />
+			<img src="/images/posts/2014-05-18-Allegro_software.png" class="img-responsive img-rounded pull-right" />
+		
+		<br />
+		<p>RomPager is a widely used embedded webserver. Playing around with an quite old but very widely used (or at least in Spain) ZyXEL P-660HW-D1 I could find an small bug in this software that leads to XSS and URL redirection.</p>
 
-		</li>
-	
-		<li>
-			<a href="/2014/04/18/Hello-world.html">Hello world</a>
-			18 Apr 2014
-			<p>I&#39;m an engineering undergraduate born in a <a href="https://www.google.com/maps/place/Chantada">small town called Chantada</a>, that likes electronics and computer and if you ask me, I&#39;m specially interested in the security area 
-and in robotics.  </p>
+<p>I&#39;ve reported to <a href="http://cert.inteco.es/">INTECO-CERT</a> and I was told that this was already fixed in newer versions of the software because this had been seen previously in other devices. Although this was already 
+discovered it had no CVE identifier so I requested one to MITRE.</p>
 
-		</li>
-	
+<p>Further information about affected devices and how to exploit the issue can be found in the following links:  </p>
+
+<ul>
+<li><a href="/docs/advisories/Advisory_RomPagerXSS.pdf">Advisory</a></li>
+<li><a href="http://osvdb.org/show/osvdb/99694">OSVDB 99694</a></li>
+<li><a href="http://osvdb.org/show/osvdb/99695">OSVDB 99695</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=2013-6786">CVE 2013-6786</a></li>
 </ul>
 
 	</div>
