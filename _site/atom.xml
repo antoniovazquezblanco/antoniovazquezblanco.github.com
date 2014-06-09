@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title></title>
+	<title>Antonio Vázquez Blanco</title>
 	<link href="http://antoniovazquezblanco.github.io//atom.xml" rel="self"/>
 	<link href="http://antoniovazquezblanco.github.io//"/>
-	<updated>2014-06-09T16:19:16+02:00</updated>
+	<updated>2014-06-09T16:25:17+02:00</updated>
 	<id>http://antoniovazquezblanco.github.io/</id>
 	<author>
-		<name></name>
-		<email></email>
+		<name>Antonio Vázquez Blanco</name>
+		<email>antoniovazquezblanco@gmail.com</email>
 	</author>
 
 	
