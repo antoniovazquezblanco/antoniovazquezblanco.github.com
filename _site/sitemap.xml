@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://antoniovazquezblanco.github.io/</loc>
+		<lastmod>2014-06-09T22:20:37+02:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+	<url>
+		<loc>http://antoniovazquezblanco.github.io//2014/06/04/New-InsydeH2O-BIOS-update-format.html</loc>
+		
+		<lastmod>2014-06-04T00:00:00+02:00</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	
+	<url>
+		<loc>http://antoniovazquezblanco.github.io//2014/05/20/Multiple-security-flaws-in-Comtrend-router.html</loc>
+		
+		<lastmod>2014-05-20T00:00:00+02:00</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	
+	<url>
+		<loc>http://antoniovazquezblanco.github.io//2014/05/18/Security-flaw-in-RomPager-webserver.html</loc>
+		
+		<lastmod>2014-05-18T00:00:00+02:00</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	
+	<url>
+		<loc>http://antoniovazquezblanco.github.io//2014/04/18/Hello-world.html</loc>
+		
+		<lastmod>2014-04-18T00:00:00+02:00</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	
+	
+	<url>
+		<loc>http://antoniovazquezblanco.github.io//atom.xml</loc>
+		
+		<lastmod>2014-06-09</lastmod>
+		
+		
+		<changefreq>weekly</changefreq>
+		
+		
+		<priority>0.7</priority>
+		
+	</url>
+	
+	<url>
+		<loc>http://antoniovazquezblanco.github.io//blog.html</loc>
+		
+		<lastmod>2014-06-09</lastmod>
+		
+		
+		<changefreq>monthly</changefreq>
+		
+		
+		<priority>0.3</priority>
+		
+	</url>
+	
+	<url>
+		<loc>http://antoniovazquezblanco.github.io//index.html</loc>
+		
+		<lastmod>2014-06-09</lastmod>
+		
+		
+		<changefreq>monthly</changefreq>
+		
+		
+		<priority>0.3</priority>
+		
+	</url>
+	
+	<url>
+		<loc>http://antoniovazquezblanco.github.io//sitemap.xml</loc>
+		
+		<lastmod>2014-06-09</lastmod>
+		
+		
+		<changefreq>monthly</changefreq>
+		
+		
+		<priority>0.3</priority>
+		
+	</url>
+	
+</urlset>
