@@ -3,7 +3,7 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="http://antoniovazquezblanco.github.io//atom.xml" rel="self"/>
 	<link href="http://antoniovazquezblanco.github.io//"/>
-	<updated>2014-06-15T18:02:50+02:00</updated>
+	<updated>2014-06-15T23:33:14+02:00</updated>
 	<id>http://antoniovazquezblanco.github.io/</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
@@ -16,8 +16,12 @@
 		<link href="http://antoniovazquezblanco.github.io//2014/06/04/New-InsydeH2O-BIOS-update-format.html"/>
 		<updated>2014-06-04T00:00:00+02:00</updated>
 		<id>http://antoniovazquezblanco.github.io//2014/06/04/New-InsydeH2O-BIOS-update-format</id>
-		<content type="html">&lt;p&gt;Some time ago I bought an Alienware M14xR2 as my last laptop broke down. Lately, Alienware published an update for my BIOS that I can&amp;#39;t burn in my computer because I only use Archlinux. By googling a bit I quickly 
+		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-06-04-Insyde_logo.jpg&quot; alt=&quot;insydeh2o&quot; title=&quot;InsydeH2O logo&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Some time ago I bought an Alienware M14xR2 as my last laptop broke down. Lately, Alienware published an update for my BIOS that I can&amp;#39;t burn in my computer because I only use Archlinux. By googling a bit I quickly 
 found a tool for burning the BIOS in a DOS command line but I would need to have a look to the &lt;a href=&quot;http://www.dell.com/support/drivers/es/es/esdhs1/DriverDetails/Product/alienware-m14x-r2?driverId=6CVT8&amp;amp;osCode=W764&amp;amp;fileId=3210572008&amp;amp;languageCode=es&amp;amp;categoryId=BI&quot;&gt;update package&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;Just by executing the update file in a virtual machine in windows I soon figured out it was a self extracting package. I just searched %TEMP% files for the extracted version.&lt;/p&gt;
 
@@ -154,7 +158,11 @@ The latest version of binwalk now looks for MZ executables.&lt;/p&gt;
 		<link href="http://antoniovazquezblanco.github.io//2014/05/20/Multiple-security-flaws-in-Comtrend-router.html"/>
 		<updated>2014-05-20T00:00:00+02:00</updated>
 		<id>http://antoniovazquezblanco.github.io//2014/05/20/Multiple-security-flaws-in-Comtrend-router</id>
-		<content type="html">&lt;p&gt;Last summer I&amp;#39;ve been playing with an old access point I found among my unused devices. Although this is far away from being a top selling device I decided to investigate a bit in order to find security flaws on it.&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-05-20-Comtrend_C54APM.jpg&quot; alt=&quot;c54apmaccesspoint&quot; title=&quot;Conceptronic C54APM access point...&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Last summer I&amp;#39;ve been playing with an old access point I found among my unused devices. Although this is far away from being a top selling device I decided to investigate a bit in order to find security flaws on it.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;I&amp;#39;ve downloaded the latest binary firmware for it and analysed it. This along some other information retrieved by the UART port inside it lead to a discovery of security flaws in the web interface.&lt;/p&gt;
 
@@ -183,7 +191,11 @@ The latest version of binwalk now looks for MZ executables.&lt;/p&gt;
 		<link href="http://antoniovazquezblanco.github.io//2014/05/18/Security-flaw-in-RomPager-webserver.html"/>
 		<updated>2014-05-18T00:00:00+02:00</updated>
 		<id>http://antoniovazquezblanco.github.io//2014/05/18/Security-flaw-in-RomPager-webserver</id>
-		<content type="html">&lt;p&gt;RomPager is a widely used embedded webserver. Playing around with an quite old but very widely used (or at least in Spain) ZyXEL P-660HW-D1 I could find an small bug in this software that leads to XSS and URL redirection.&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-05-18-Allegro_software.png&quot; alt=&quot;allegrosoftware&quot; title=&quot;Allegro software&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;RomPager is a widely used embedded webserver. Playing around with an quite old but very widely used (or at least in Spain) ZyXEL P-660HW-D1 I could find an small bug in this software that leads to XSS and URL redirection.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;I&amp;#39;ve reported to &lt;a href=&quot;http://cert.inteco.es/&quot;&gt;INTECO-CERT&lt;/a&gt; and I was told that this was already fixed in newer versions of the software because this had been seen previously in other devices. Although this was already 
 discovered it had no CVE identifier so I requested one to MITRE.&lt;/p&gt;
@@ -204,8 +216,12 @@ discovered it had no CVE identifier so I requested one to MITRE.&lt;/p&gt;
 		<link href="http://antoniovazquezblanco.github.io//2014/04/18/Hello-world.html"/>
 		<updated>2014-04-18T00:00:00+02:00</updated>
 		<id>http://antoniovazquezblanco.github.io//2014/04/18/Hello-world</id>
-		<content type="html">&lt;p&gt;I&amp;#39;m an engineering undergraduate born in a &lt;a href=&quot;https://www.google.com/maps/place/Chantada&quot;&gt;small town called Chantada&lt;/a&gt;, that likes electronics and computer and if you ask me, I&amp;#39;m specially interested in the security area 
+		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-04-18-Myself.png&quot; alt=&quot;antoniovazquezblanco&quot; title=&quot;Antonio Vázquez Blanco&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m an engineering undergraduate born in a &lt;a href=&quot;https://www.google.com/maps/place/Chantada&quot;&gt;small town called Chantada&lt;/a&gt;, that likes electronics and computer and if you ask me, I&amp;#39;m specially interested in the security area 
 and in robotics.  &lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;I would like to use this blog to share some of my experiences and specially the knowledge that I found difficult to locate on the net or that really helped me getting introduced into particular topics like embeded 
 device security.  &lt;/p&gt;
