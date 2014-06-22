@@ -2,7 +2,7 @@
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://antoniovazquezblanco.github.io/</loc>
-		<lastmod>2014-06-15T23:33:14+02:00</lastmod>
+		<lastmod>2014-06-22T11:49:18+02:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -47,7 +47,7 @@
 	<url>
 		<loc>http://antoniovazquezblanco.github.io//atom.xml</loc>
 		
-		<lastmod>2014-06-15</lastmod>
+		<lastmod>2014-06-22</lastmod>
 		
 		
 		<changefreq>weekly</changefreq>
@@ -60,7 +60,7 @@
 	<url>
 		<loc>http://antoniovazquezblanco.github.io//blog.html</loc>
 		
-		<lastmod>2014-06-15</lastmod>
+		<lastmod>2014-06-22</lastmod>
 		
 		
 		<changefreq>monthly</changefreq>
@@ -73,7 +73,7 @@
 	<url>
 		<loc>http://antoniovazquezblanco.github.io//index.html</loc>
 		
-		<lastmod>2014-06-15</lastmod>
+		<lastmod>2014-06-22</lastmod>
 		
 		
 		<changefreq>monthly</changefreq>
@@ -86,7 +86,7 @@
 	<url>
 		<loc>http://antoniovazquezblanco.github.io//sitemap.xml</loc>
 		
-		<lastmod>2014-06-15</lastmod>
+		<lastmod>2014-06-22</lastmod>
 		
 		
 		<changefreq>monthly</changefreq>
