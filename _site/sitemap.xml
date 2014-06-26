@@ -2,9 +2,18 @@
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://antoniovazquezblanco.github.io</loc>
-		<lastmod>2014-06-26T12:44:03+02:00</lastmod>
+		<lastmod>2014-06-26T13:08:34+02:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
+	</url>
+	
+	<url>
+		<loc>http://antoniovazquezblanco.github.io/blog/Some-HTML-CSS-stuff-I-dont-like-translations.html</loc>
+		
+		<lastmod>2014-06-26T00:00:00+02:00</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
 	</url>
 	
 	<url>

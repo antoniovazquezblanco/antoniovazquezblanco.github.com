@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title> Some HTML/CSS stuff I don't like: Translations |  Antonio Vázquez Blanco</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Some HTML/CSS stuff I don't like: Translations">
+	<meta name="keywords" content="HTML, CSS, localization, translation, languages, standard">
+	<!-- Style -->
+	<link href="/css/bootstrap-3.0.2.min.css" rel="stylesheet">
+	<link href="/css/font-awesome-4.1.0.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-social-4.5.0.min.css" rel="stylesheet">
+	<link href="/css/pygments-1.0.min.css" rel="stylesheet">
+	<link href="/css/general-1.0.min.css" rel="stylesheet">
+	<!-- Javascript -->
+	<script src="/js/jquery-2.1.0.min.js"></script>
+	<script src="/js/bootstrap-3.0.2.min.js"></script>
+</head>
+
+  <body>
+	<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Antón</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					
+					<li >
+						<a href="/">Home</a>
+					</li>
+				
+					
+					<li class="active">
+						<a href="/blog/">Blog</a>
+					</li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	<!-- Real body -->
+	<style>
+	body>.container {
+	        background-color: #FFF;
+	        border-radius: 5px;
+		margin-bottom: 50px;
+	}
+	</style>
+	<div class="container">
+		<h1>Some HTML/CSS stuff I don't like: Translations</h1>
+		<div class="row-fluid">
+	                <div class="span6" style="display: inline-block;"><p><span class="glyphicon glyphicon-time"></span> 26 June 2014 by <a href="https://plus.google.com/+antoniovazquezblanco?rel=author">Antonio Vázquez Blanco</a></p></div>
+			<div class="span6 pull-right"><div><div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://antoniovazquezblanco.github.io/blog/Some-HTML-CSS-stuff-I-dont-like-translations.html"></div>   <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://antoniovazquezblanco.github.io/blog/Some-HTML-CSS-stuff-I-dont-like-translations.html" data-text="Some HTML/CSS stuff I don't like: Translations" data-via="antonvazquezb">Tweet</a></div>
+</div>
+		</div>
+		<br />
+		<p><img src="/images/posts/2014-06-26-HTML_CSS_JS_logo.png" alt="htmlcssjslogo" title="HTML5, CSS3 and JS logos"></p>
+
+<p>I never liked HTML or CSS too much. I have to say that althought they were easy for me to get started with them, I always found tricky to get some things well done. I have to say that HTML 5 standard did improve a lot 
+of aspects of this language but I see this technology too far from where it should be. Althought it has evolved there has been no interest in fixing some of the most basic issues of the standard among, in some cases, 
+no interest in site maintenance to keep up to date with the latest changes. I&#39;m thinking in an example while I write my opinion, it is translations.</p>
+
+<!--more-->
+
+<p>Although multilanguage webpages are very important in some cases there&#39;s no standard way of translating webpages. I can&#39;t imagine why this topic has never been talked so seriously it doesn&#39;t is part of html standard.
+If you want a page to be in various languages you must translate it via Javascript (Implies loading more content than needed and charging the user side computation), either duplicate the page (Maintainig repeated 
+content), either use server side languages that you may not want or need. In my opinion none of this is ideal and it could be better with very little effort.</p>
+
+<p>A lot of alternatives have been showing up in order to fill this gap. Adobe has an Air framework for localization, Microsoft is pushing its methods for html based apps, numerous jQuery plugins are availiable for 
+acomplishing this task, node.js, django, php... Everyone is looking fordward a system that can be widely used but I&#39;m personally not very pleased with none of them.</p>
+
+<p>Knowing that actual browsers must be able to parse XML similar language and that a great majority of them are able to parse and run Javascript I think that being able to parse strings from an XML or JSON from a file is 
+not so hard to implement. I don&#39;t really care about the format of storing strings (Even CSS like format could be ok). I am thinking of a tag that includes a localization file as CSS is included:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;index.es.lang&quot;</span> <span class="na">rel=</span><span class="s">&quot;localization&quot;</span> <span class="na">loc=</span><span class="s">&quot;es&quot;</span> <span class="na">type=</span><span class="s">&quot;text/json&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;index.en.lang&quot;</span> <span class="na">rel=</span><span class="s">&quot;localization&quot;</span> <span class="na">loc=</span><span class="s">&quot;en&quot;</span> <span class="na">type=</span><span class="s">&quot;text/json&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>A second thing is needed for this to work, a way to relate an id to a string inside HTML. A new property should be enought for this to be working:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;index.es.lang&quot;</span> <span class="na">rel=</span><span class="s">&quot;localization&quot;</span> <span class="na">loc=</span><span class="s">&quot;es&quot;</span> <span class="na">type=</span><span class="s">&quot;text/json&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;index.en.lang&quot;</span> <span class="na">rel=</span><span class="s">&quot;localization&quot;</span> <span class="na">loc=</span><span class="s">&quot;en&quot;</span> <span class="na">type=</span><span class="s">&quot;text/json&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;title</span> <span class="na">textid=</span><span class="s">&quot;title&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">textid=</span><span class="s">&quot;content&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>This way the browser would be responsible for parsing the correct localization file based on the user preferences and populate the content of the tags that contain the translation property. This enables the browser to 
+optimize the translation loading code instead of being loaded by Javascript for example and to reduce the amount of data transferred throught the network by only loading the desired localization file.</p>
+
+<p>I can think of a major con to my mehtod that is related with nested tags:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;index.es.lang&quot;</span> <span class="na">rel=</span><span class="s">&quot;localization&quot;</span> <span class="na">loc=</span><span class="s">&quot;es&quot;</span> <span class="na">type=</span><span class="s">&quot;text/json&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;index.en.lang&quot;</span> <span class="na">rel=</span><span class="s">&quot;localization&quot;</span> <span class="na">loc=</span><span class="s">&quot;en&quot;</span> <span class="na">type=</span><span class="s">&quot;text/json&quot;</span> <span class="nt">/&gt;</span> 
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">textid=</span><span class="s">&quot;something&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">textid=</span><span class="s">&quot;something_else&quot;</span> <span class="na">href=</span><span class="s">&quot;http://google.com/&quot;</span> <span class="nt">/&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>In the exposed case the <code>a</code> tag cannot be between <code>p</code> text. Either it is before either after. That forces us to change the structure of the page to something similar to the following and to fix the appearance 
+with css.</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;index.es.lang&quot;</span> <span class="na">rel=</span><span class="s">&quot;localization&quot;</span> <span class="na">loc=</span><span class="s">&quot;es&quot;</span> <span class="na">type=</span><span class="s">&quot;text/json&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;index.en.lang&quot;</span> <span class="na">rel=</span><span class="s">&quot;localization&quot;</span> <span class="na">loc=</span><span class="s">&quot;en&quot;</span> <span class="na">type=</span><span class="s">&quot;text/json&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">textid=</span><span class="s">&quot;something_pre&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">textid=</span><span class="s">&quot;something_else&quot;</span> <span class="na">href=</span><span class="s">&quot;http://google.com/&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">textid=</span><span class="s">&quot;something_post&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>I don&#39;t know what your experience with HTML/CSS is but for me this is kind of a big fail.</p>
+
+<p>As I&#39;m not to happy with this standard I think I will be writing about my thoughts on these languages from time to time. I would like to hear your oppinion in this topic because you will probably have much more 
+experience than me in this area.</p>
+
+		<br />
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'antoniovazquezblanco'; // required: replace example with your forum shortname
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+	</div>
+	
+
+	<!-- Twitter JS -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Google Plus JS -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-24374313-4', 'antoniovazquezblanco.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+

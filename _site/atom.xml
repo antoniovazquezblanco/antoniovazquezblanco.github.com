@@ -3,13 +3,95 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="http://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
 	<link href="http://antoniovazquezblanco.github.io/"/>
-	<updated>2014-06-26T12:44:03+02:00</updated>
+	<updated>2014-06-26T13:08:34+02:00</updated>
 	<id>http://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
 		<email>antoniovazquezblanco@gmail.com</email>
 	</author>
 
+	
+	<entry>
+		<title>Some HTML/CSS stuff I don't like: Translations</title>
+		<link href="http://antoniovazquezblanco.github.io/blog/Some-HTML-CSS-stuff-I-dont-like-translations.html"/>
+		<updated>2014-06-26T00:00:00+02:00</updated>
+		<id>http://antoniovazquezblanco.github.io/blog/Some-HTML-CSS-stuff-I-dont-like-translations</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-06-26-HTML_CSS_JS_logo.png&quot; alt=&quot;htmlcssjslogo&quot; title=&quot;HTML5, CSS3 and JS logos&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I never liked HTML or CSS too much. I have to say that althought they were easy for me to get started with them, I always found tricky to get some things well done. I have to say that HTML 5 standard did improve a lot 
+of aspects of this language but I see this technology too far from where it should be. Althought it has evolved there has been no interest in fixing some of the most basic issues of the standard among, in some cases, 
+no interest in site maintenance to keep up to date with the latest changes. I&amp;#39;m thinking in an example while I write my opinion, it is translations.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Although multilanguage webpages are very important in some cases there&amp;#39;s no standard way of translating webpages. I can&amp;#39;t imagine why this topic has never been talked so seriously it doesn&amp;#39;t is part of html standard.
+If you want a page to be in various languages you must translate it via Javascript (Implies loading more content than needed and charging the user side computation), either duplicate the page (Maintainig repeated 
+content), either use server side languages that you may not want or need. In my opinion none of this is ideal and it could be better with very little effort.&lt;/p&gt;
+
+&lt;p&gt;A lot of alternatives have been showing up in order to fill this gap. Adobe has an Air framework for localization, Microsoft is pushing its methods for html based apps, numerous jQuery plugins are availiable for 
+acomplishing this task, node.js, django, php... Everyone is looking fordward a system that can be widely used but I&amp;#39;m personally not very pleased with none of them.&lt;/p&gt;
+
+&lt;p&gt;Knowing that actual browsers must be able to parse XML similar language and that a great majority of them are able to parse and run Javascript I think that being able to parse strings from an XML or JSON from a file is 
+not so hard to implement. I don&amp;#39;t really care about the format of storing strings (Even CSS like format could be ok). I am thinking of a tag that includes a localization file as CSS is included:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;index.es.lang&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;localization&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;loc=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;es&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/json&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;index.en.lang&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;localization&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;loc=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;en&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/json&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A second thing is needed for this to work, a way to relate an id to a string inside HTML. A new property should be enought for this to be working:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;index.es.lang&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;localization&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;loc=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;es&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/json&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;index.en.lang&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;localization&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;loc=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;en&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/json&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;textid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;textid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;content&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This way the browser would be responsible for parsing the correct localization file based on the user preferences and populate the content of the tags that contain the translation property. This enables the browser to 
+optimize the translation loading code instead of being loaded by Javascript for example and to reduce the amount of data transferred throught the network by only loading the desired localization file.&lt;/p&gt;
+
+&lt;p&gt;I can think of a major con to my mehtod that is related with nested tags:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;index.es.lang&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;localization&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;loc=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;es&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/json&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;index.en.lang&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;localization&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;loc=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;en&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/json&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt; 
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;textid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;something&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;textid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;something_else&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://google.com/&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the exposed case the &lt;code&gt;a&lt;/code&gt; tag cannot be between &lt;code&gt;p&lt;/code&gt; text. Either it is before either after. That forces us to change the structure of the page to something similar to the following and to fix the appearance 
+with css.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;index.es.lang&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;localization&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;loc=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;es&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/json&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;index.en.lang&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;localization&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;loc=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;en&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/json&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;textid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;something_pre&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;textid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;something_else&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://google.com/&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;textid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;something_post&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I don&amp;#39;t know what your experience with HTML/CSS is but for me this is kind of a big fail.&lt;/p&gt;
+
+&lt;p&gt;As I&amp;#39;m not to happy with this standard I think I will be writing about my thoughts on these languages from time to time. I would like to hear your oppinion in this topic because you will probably have much more 
+experience than me in this area.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Binary firmware analysis</title>
