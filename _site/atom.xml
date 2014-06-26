@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Antonio Vázquez Blanco</title>
-	<link href="http://antoniovazquezblanco.github.io//atom.xml" rel="self"/>
-	<link href="http://antoniovazquezblanco.github.io//"/>
-	<updated>2014-06-26T11:25:51+02:00</updated>
-	<id>http://antoniovazquezblanco.github.io/</id>
+	<link href="http://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
+	<link href="http://antoniovazquezblanco.github.io/"/>
+	<updated>2014-06-26T12:44:03+02:00</updated>
+	<id>http://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
 		<email>antoniovazquezblanco@gmail.com</email>
@@ -13,9 +13,9 @@
 	
 	<entry>
 		<title>Binary firmware analysis</title>
-		<link href="http://antoniovazquezblanco.github.io//blog/2014/06/22/Binary-firmware-analysis.html"/>
+		<link href="http://antoniovazquezblanco.github.io/blog/Binary-firmware-analysis.html"/>
 		<updated>2014-06-22T00:00:00+02:00</updated>
-		<id>http://antoniovazquezblanco.github.io//blog/2014/06/22/Binary-firmware-analysis</id>
+		<id>http://antoniovazquezblanco.github.io/blog/Binary-firmware-analysis</id>
 		<content type="html">&lt;p&gt;When trying to find exploits or vulnerabilities in embedded devices, any information is very useful.&lt;/p&gt;
 
 &lt;p&gt;Firmware analysis can be a good starting point as there&amp;#39;s no need to have physical access to a device in order to investigate and there&amp;#39;s no need to buy one as long as the manufacturer let you download updates from their website.&lt;/p&gt;
@@ -128,9 +128,9 @@ due to misconfiguration. &lt;/p&gt;
 	
 	<entry>
 		<title>New InsydeH2O BIOS update format</title>
-		<link href="http://antoniovazquezblanco.github.io//blog/2014/06/04/New-InsydeH2O-BIOS-update-format.html"/>
+		<link href="http://antoniovazquezblanco.github.io/blog/New-InsydeH2O-BIOS-update-format.html"/>
 		<updated>2014-06-04T00:00:00+02:00</updated>
-		<id>http://antoniovazquezblanco.github.io//blog/2014/06/04/New-InsydeH2O-BIOS-update-format</id>
+		<id>http://antoniovazquezblanco.github.io/blog/New-InsydeH2O-BIOS-update-format</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-06-04-Insyde_logo.jpg&quot; alt=&quot;insydeh2o&quot; title=&quot;InsydeH2O logo&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Some time ago I bought an Alienware M14xR2 as my last laptop broke down. Lately, Alienware published an update for my BIOS that I can&amp;#39;t burn in my computer because I only use Archlinux. By googling a bit I quickly 
@@ -270,9 +270,9 @@ The latest version of binwalk now looks for MZ executables.&lt;/p&gt;
 	
 	<entry>
 		<title>Multiple security flaws in Comtrend router</title>
-		<link href="http://antoniovazquezblanco.github.io//blog/2014/05/20/Multiple-security-flaws-in-Comtrend-router.html"/>
+		<link href="http://antoniovazquezblanco.github.io/blog/Multiple-security-flaws-in-Comtrend-router.html"/>
 		<updated>2014-05-20T00:00:00+02:00</updated>
-		<id>http://antoniovazquezblanco.github.io//blog/2014/05/20/Multiple-security-flaws-in-Comtrend-router</id>
+		<id>http://antoniovazquezblanco.github.io/blog/Multiple-security-flaws-in-Comtrend-router</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-05-20-Comtrend_C54APM.jpg&quot; alt=&quot;c54apmaccesspoint&quot; title=&quot;Conceptronic C54APM access point...&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Last summer I&amp;#39;ve been playing with an old access point I found among my unused devices. Although this is far away from being a top selling device I decided to investigate a bit in order to find security flaws on it.&lt;/p&gt;
@@ -303,9 +303,9 @@ The latest version of binwalk now looks for MZ executables.&lt;/p&gt;
 	
 	<entry>
 		<title>Security flaw in RomPager webserver</title>
-		<link href="http://antoniovazquezblanco.github.io//blog/2014/05/18/Security-flaw-in-RomPager-webserver.html"/>
+		<link href="http://antoniovazquezblanco.github.io/blog/Security-flaw-in-RomPager-webserver.html"/>
 		<updated>2014-05-18T00:00:00+02:00</updated>
-		<id>http://antoniovazquezblanco.github.io//blog/2014/05/18/Security-flaw-in-RomPager-webserver</id>
+		<id>http://antoniovazquezblanco.github.io/blog/Security-flaw-in-RomPager-webserver</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-05-18-Allegro_software.png&quot; alt=&quot;allegrosoftware&quot; title=&quot;Allegro software&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;RomPager is a widely used embedded webserver. Playing around with an quite old but very widely used (or at least in Spain) ZyXEL P-660HW-D1 I could find an small bug in this software that leads to XSS and URL redirection.&lt;/p&gt;
@@ -328,9 +328,9 @@ discovered it had no CVE identifier so I requested one to MITRE.&lt;/p&gt;
 	
 	<entry>
 		<title>Hello world</title>
-		<link href="http://antoniovazquezblanco.github.io//blog/2014/04/18/Hello-world.html"/>
+		<link href="http://antoniovazquezblanco.github.io/blog/Hello-world.html"/>
 		<updated>2014-04-18T00:00:00+02:00</updated>
-		<id>http://antoniovazquezblanco.github.io//blog/2014/04/18/Hello-world</id>
+		<id>http://antoniovazquezblanco.github.io/blog/Hello-world</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-04-18-Myself.png&quot; alt=&quot;antoniovazquezblanco&quot; title=&quot;Antonio Vázquez Blanco&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;#39;m an engineering undergraduate born in a &lt;a href=&quot;https://www.google.com/maps/place/Chantada&quot;&gt;small town called Chantada&lt;/a&gt;, that likes electronics and computer and if you ask me, I&amp;#39;m specially interested in the security area 

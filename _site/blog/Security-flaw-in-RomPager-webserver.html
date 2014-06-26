@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<title> Multiple security flaws in Comtrend router |  Antonio Vázquez Blanco</title>
+	<title> Security flaw in RomPager webserver |  Antonio Vázquez Blanco</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Multiple security flaws in Comtrend router">
-	<meta name="keywords" content="Conceptronic, C54APM, security, exploit, cve">
+	<meta name="description" content="Security flaw in RomPager webserver">
+	<meta name="keywords" content="RomPager, vulnerability, exploit, security, cve">
 	<!-- Style -->
 	<link href="/css/bootstrap-3.0.2.min.css" rel="stylesheet">
 	<link href="/css/font-awesome-4.1.0.min.css" rel="stylesheet">
@@ -60,37 +60,29 @@
 	}
 	</style>
 	<div class="container">
-		<h1>Multiple security flaws in Comtrend router</h1>
+		<h1>Security flaw in RomPager webserver</h1>
 		<div class="row-fluid">
-	                <div class="span6" style="display: inline-block;"><p><span class="glyphicon glyphicon-time"></span> 20 May 2014 by <a href="https://plus.google.com/+antoniovazquezblanco?rel=author">Antonio Vázquez Blanco</a></p></div>
-			<div class="span6 pull-right"><div><div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://antoniovazquezblanco.github.io//blog/2014/05/20/Multiple-security-flaws-in-Comtrend-router.html"></div>   <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://antoniovazquezblanco.github.io//blog/2014/05/20/Multiple-security-flaws-in-Comtrend-router.html" data-text="Multiple security flaws in Comtrend router" data-via="antonvazquezb">Tweet</a></div>
+	                <div class="span6" style="display: inline-block;"><p><span class="glyphicon glyphicon-time"></span> 18 May 2014 by <a href="https://plus.google.com/+antoniovazquezblanco?rel=author">Antonio Vázquez Blanco</a></p></div>
+			<div class="span6 pull-right"><div><div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://antoniovazquezblanco.github.io/blog/Security-flaw-in-RomPager-webserver.html"></div>   <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://antoniovazquezblanco.github.io/blog/Security-flaw-in-RomPager-webserver.html" data-text="Security flaw in RomPager webserver" data-via="antonvazquezb">Tweet</a></div>
 </div>
 		</div>
 		<br />
-		<p><img src="/images/posts/2014-05-20-Comtrend_C54APM.jpg" alt="c54apmaccesspoint" title="Conceptronic C54APM access point..."></p>
+		<p><img src="/images/posts/2014-05-18-Allegro_software.png" alt="allegrosoftware" title="Allegro software"></p>
 
-<p>Last summer I&#39;ve been playing with an old access point I found among my unused devices. Although this is far away from being a top selling device I decided to investigate a bit in order to find security flaws on it.</p>
+<p>RomPager is a widely used embedded webserver. Playing around with an quite old but very widely used (or at least in Spain) ZyXEL P-660HW-D1 I could find an small bug in this software that leads to XSS and URL redirection.</p>
 
 <!--more-->
 
-<p>I&#39;ve downloaded the latest binary firmware for it and analysed it. This along some other information retrieved by the UART port inside it lead to a discovery of security flaws in the web interface.</p>
+<p>I&#39;ve reported to <a href="http://cert.inteco.es/">INTECO-CERT</a> and I was told that this was already fixed in newer versions of the software because this had been seen previously in other devices. Although this was already 
+discovered it had no CVE identifier so I requested one to MITRE.</p>
 
-<p>Future posts will explain how I was able to interface the UART port and some basis of firmware analisys. I hope you will find them interesting.</p>
-
-<p>More information can be found in the following links:</p>
+<p>Further information about affected devices and how to exploit the issue can be found in the following links:  </p>
 
 <ul>
-<li><a href="/docs/advisories/Advisory_C54APM_Multiple.pdf">Advisory</a></li>
-<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1405">CVE-2014-1405</a></li>
-<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1406">CVE-2014-1406</a></li>
-<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1407">CVE-2014-1407</a></li>
-<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1408">CVE-2014-1408</a></li>
-<li><a href="http://www.osvdb.net/show/osvdb/101916">OSVDB 101916</a></li>
-<li><a href="http://www.osvdb.net/show/osvdb/101917">OSVDB 101917</a></li>
-<li><a href="http://www.osvdb.net/show/osvdb/101918">OSVDB 101918</a></li>
-<li><a href="http://www.osvdb.net/show/osvdb/101919">OSVDB 101919</a></li>
-<li><a href="http://www.osvdb.net/show/osvdb/101920">OSVDB 101920</a></li>
-<li><a href="http://www.osvdb.net/show/osvdb/101921">OSVDB 101921</a></li>
+<li><a href="/docs/advisories/Advisory_RomPagerXSS.pdf">Advisory</a></li>
+<li><a href="http://osvdb.org/show/osvdb/99694">OSVDB 99694</a></li>
+<li><a href="http://osvdb.org/show/osvdb/99695">OSVDB 99695</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=2013-6786">CVE 2013-6786</a></li>
 </ul>
 
 		<br />
