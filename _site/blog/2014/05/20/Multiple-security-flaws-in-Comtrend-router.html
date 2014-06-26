@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<title> Hello world |  Antonio Vázquez Blanco</title>
+	<title> Multiple security flaws in Comtrend router |  Antonio Vázquez Blanco</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Hello world">
-	<meta name="keywords" content="blog, Antonio Vázquez Blanco">
+	<meta name="description" content="Multiple security flaws in Comtrend router">
+	<meta name="keywords" content="Conceptronic, C54APM, security, exploit, cve">
 	<!-- Style -->
 	<link href="/css/bootstrap-3.0.2.min.css" rel="stylesheet">
 	<link href="/css/font-awesome-4.1.0.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
 					</li>
 				
 					
-					<li >
+					<li class="active">
 						<a href="/blog/">Blog</a>
 					</li>
 				
@@ -60,25 +60,38 @@
 	}
 	</style>
 	<div class="container">
-		<h1>Hello world</h1>
+		<h1>Multiple security flaws in Comtrend router</h1>
 		<div class="row-fluid">
-	                <div class="span6" style="display: inline-block;"><p><span class="glyphicon glyphicon-time"></span> 18 April 2014 by <a href="https://plus.google.com/+antoniovazquezblanco?rel=author">Antonio Vázquez Blanco</a></p></div>
-			<div class="span6 pull-right"><div><div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://antoniovazquezblanco.github.io//2014/04/18/Hello-world.html"></div>   <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://antoniovazquezblanco.github.io//2014/04/18/Hello-world.html" data-text="Hello world" data-via="antonvazquezb">Tweet</a></div>
+	                <div class="span6" style="display: inline-block;"><p><span class="glyphicon glyphicon-time"></span> 20 May 2014 by <a href="https://plus.google.com/+antoniovazquezblanco?rel=author">Antonio Vázquez Blanco</a></p></div>
+			<div class="span6 pull-right"><div><div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://antoniovazquezblanco.github.io//blog/2014/05/20/Multiple-security-flaws-in-Comtrend-router.html"></div>   <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://antoniovazquezblanco.github.io//blog/2014/05/20/Multiple-security-flaws-in-Comtrend-router.html" data-text="Multiple security flaws in Comtrend router" data-via="antonvazquezb">Tweet</a></div>
 </div>
 		</div>
 		<br />
-		<p><img src="/images/posts/2014-04-18-Myself.png" alt="antoniovazquezblanco" title="Antonio Vázquez Blanco"></p>
+		<p><img src="/images/posts/2014-05-20-Comtrend_C54APM.jpg" alt="c54apmaccesspoint" title="Conceptronic C54APM access point..."></p>
 
-<p>I&#39;m an engineering undergraduate born in a <a href="https://www.google.com/maps/place/Chantada">small town called Chantada</a>, that likes electronics and computer and if you ask me, I&#39;m specially interested in the security area 
-and in robotics.  </p>
+<p>Last summer I&#39;ve been playing with an old access point I found among my unused devices. Although this is far away from being a top selling device I decided to investigate a bit in order to find security flaws on it.</p>
 
 <!--more-->
 
-<p>I would like to use this blog to share some of my experiences and specially the knowledge that I found difficult to locate on the net or that really helped me getting introduced into particular topics like embeded 
-device security.  </p>
+<p>I&#39;ve downloaded the latest binary firmware for it and analysed it. This along some other information retrieved by the UART port inside it lead to a discovery of security flaws in the web interface.</p>
 
-<p>I think you will find usefull some of my projects and interests and I hope you can learn from my experience the same way I expect learning from your opinions and comments. I would like to see a lot of feedback and/or 
-any questions you think I might be able to solve in my mailbox (<a href="mailto:antoniovazquezblanco@gmail.com">antoniovazquezblanco@gmail.com</a>) or in comments (not implemented yet in this blog...).</p>
+<p>Future posts will explain how I was able to interface the UART port and some basis of firmware analisys. I hope you will find them interesting.</p>
+
+<p>More information can be found in the following links:</p>
+
+<ul>
+<li><a href="/docs/advisories/Advisory_C54APM_Multiple.pdf">Advisory</a></li>
+<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1405">CVE-2014-1405</a></li>
+<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1406">CVE-2014-1406</a></li>
+<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1407">CVE-2014-1407</a></li>
+<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1408">CVE-2014-1408</a></li>
+<li><a href="http://www.osvdb.net/show/osvdb/101916">OSVDB 101916</a></li>
+<li><a href="http://www.osvdb.net/show/osvdb/101917">OSVDB 101917</a></li>
+<li><a href="http://www.osvdb.net/show/osvdb/101918">OSVDB 101918</a></li>
+<li><a href="http://www.osvdb.net/show/osvdb/101919">OSVDB 101919</a></li>
+<li><a href="http://www.osvdb.net/show/osvdb/101920">OSVDB 101920</a></li>
+<li><a href="http://www.osvdb.net/show/osvdb/101921">OSVDB 101921</a></li>
+</ul>
 
 		<br />
 		<div id="disqus_thread"></div>
