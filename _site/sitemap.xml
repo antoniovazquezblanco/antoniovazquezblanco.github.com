@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://antoniovazquezblanco.github.io</loc>
-		<lastmod>2014-06-26T13:08:34+02:00</lastmod>
+		<loc>https://antoniovazquezblanco.github.io</loc>
+		<lastmod>2014-06-26T15:07:28+02:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/blog/Some-HTML-CSS-stuff-I-dont-like-translations.html</loc>
+		<loc>https://antoniovazquezblanco.github.io/blog/Some-HTML-CSS-stuff-I-dont-like-translations.html</loc>
 		
 		<lastmod>2014-06-26T00:00:00+02:00</lastmod>
 		
@@ -17,7 +17,7 @@
 	</url>
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/blog/Binary-firmware-analysis.html</loc>
+		<loc>https://antoniovazquezblanco.github.io/blog/Binary-firmware-analysis.html</loc>
 		
 		<lastmod>2014-06-22T00:00:00+02:00</lastmod>
 		
@@ -26,7 +26,7 @@
 	</url>
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/blog/New-InsydeH2O-BIOS-update-format.html</loc>
+		<loc>https://antoniovazquezblanco.github.io/blog/New-InsydeH2O-BIOS-update-format.html</loc>
 		
 		<lastmod>2014-06-04T00:00:00+02:00</lastmod>
 		
@@ -35,7 +35,7 @@
 	</url>
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/blog/Multiple-security-flaws-in-Comtrend-router.html</loc>
+		<loc>https://antoniovazquezblanco.github.io/blog/Multiple-security-flaws-in-Comtrend-router.html</loc>
 		
 		<lastmod>2014-05-20T00:00:00+02:00</lastmod>
 		
@@ -44,7 +44,7 @@
 	</url>
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/blog/Security-flaw-in-RomPager-webserver.html</loc>
+		<loc>https://antoniovazquezblanco.github.io/blog/Security-flaw-in-RomPager-webserver.html</loc>
 		
 		<lastmod>2014-05-18T00:00:00+02:00</lastmod>
 		
@@ -53,7 +53,7 @@
 	</url>
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/blog/Hello-world.html</loc>
+		<loc>https://antoniovazquezblanco.github.io/blog/Hello-world.html</loc>
 		
 		<lastmod>2014-04-18T00:00:00+02:00</lastmod>
 		
@@ -63,7 +63,7 @@
 	
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/404.html</loc>
+		<loc>https://antoniovazquezblanco.github.io/404.html</loc>
 		
 		<lastmod>2014-06-26</lastmod>
 		
@@ -76,7 +76,7 @@
 	</url>
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/atom.xml</loc>
+		<loc>https://antoniovazquezblanco.github.io/atom.xml</loc>
 		
 		<lastmod>2014-06-26</lastmod>
 		
@@ -89,7 +89,7 @@
 	</url>
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/index.html</loc>
+		<loc>https://antoniovazquezblanco.github.io/index.html</loc>
 		
 		<lastmod>2014-06-26</lastmod>
 		
@@ -102,7 +102,7 @@
 	</url>
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/blog/index.html</loc>
+		<loc>https://antoniovazquezblanco.github.io/blog/index.html</loc>
 		
 		<lastmod>2014-06-26</lastmod>
 		
@@ -115,7 +115,7 @@
 	</url>
 	
 	<url>
-		<loc>http://antoniovazquezblanco.github.io/sitemap.xml</loc>
+		<loc>https://antoniovazquezblanco.github.io/sitemap.xml</loc>
 		
 		<lastmod>2014-06-26</lastmod>
 		
