@@ -3,13 +3,108 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="https://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
 	<link href="https://antoniovazquezblanco.github.io/"/>
-	<updated>2014-07-19T12:32:28+02:00</updated>
+	<updated>2014-08-07T16:33:56+02:00</updated>
 	<id>https://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
 		<email>antoniovazquezblanco@gmail.com</email>
 	</author>
 
+	
+	<entry>
+		<title>Open wireless networks</title>
+		<link href="https://antoniovazquezblanco.github.io/blog/Open-wireless-networks.html"/>
+		<updated>2014-08-07T00:00:00+02:00</updated>
+		<id>https://antoniovazquezblanco.github.io/blog/Open-wireless-networks</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-08-07-Wifi_logo.jpg&quot; alt=&quot;wifi&quot; title=&quot;Wifi logo&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;It is very common to find open wifi spots in airports, hotels, coffe shops... I understand that when you want universal internet access is tempting to use unencrypted a network but I find this very inconvinient because 
+this kind of networks are very insecure.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Open networks let users connect without password but because of their design traffic remains unencrypted letting other people view sensible information without much hasstle.&lt;br&gt;
+For those who are not familiar with wireless devices, you should know that a wireless device can operate in various modes. The most common is &amp;quot;managed&amp;quot; mode, where the wireless card listens for the data that targets 
+its hardware address (a network card identifier), but there are others (not always supported) like &amp;quot;monitor&amp;quot; mode where the card just shows anything that is withing physical range, whether it is targeted for that 
+device or not. Monitor mode can be used to sniff others people traffic wich can be later analyzed. &lt;/p&gt;
+
+&lt;p&gt;When I start my computer, by default, Linux puts my wireless card (wlp8s0) in managed mode:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo iwconfig
+wlp8s0    IEEE 802.11abgn  ESSID:&lt;span class=&quot;s2&quot;&gt;&amp;quot;Wifi-Usos&amp;quot;&lt;/span&gt;  
+          Mode:Managed  Frequency:2.437 GHz  Access Point: 00:22:B0:6F:E7:74   
+          Bit &lt;span class=&quot;nv&quot;&gt;Rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;48 Mb/s   Tx-Power&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;17 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link &lt;span class=&quot;nv&quot;&gt;Quality&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;29/70  Signal &lt;span class=&quot;nv&quot;&gt;level&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;-81 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:20   Missed beacon:0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For putting it into monitor mode, in my case I have to type the following commands:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ sudo ifconfig wlp8s0 down
+$ sudo iwconfig wlp8s0 mode monitor 
+$ sudo ifconfig wlp8s0 up
+$ sudo iwconfig 
+wlp8s0    IEEE 802.11abgn  Mode:Monitor  Frequency:2.437 GHz  Tx-Power=17 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:off
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Putting a card into monitor mode requires some research. Not every card supports it and not every card will enter monitor mode using previous commands. It also depends on the operative system being used (Windows, 
+Linux, Mac OS...). If anyone wants to put it&amp;#39;s card into monitor mode and finds it difficult, just ask in the comments section and I will try to help as much as I can. For the followin example I will be using managed 
+mode in order to avoid capturing others people traffic as I don&amp;#39;t have authorization for that.&lt;/p&gt;
+
+&lt;p&gt;Once in the desired mode, multiple programs could be used to dump network traffic (airodump-ng, tcpdump...) but for those who don&amp;#39;t know much about the topic will find &lt;a href=&quot;http://www.wireshark.org/&quot;&gt;Wireshark&lt;/a&gt; simple to use 
+(has an UI) but sometimes shows to much info. Despite the cons I think that you will find it very fun to use and easy to install (It&amp;#39;s free!).&lt;/p&gt;
+
+&lt;p&gt;Once Wireshark is started you only have to click on the &lt;code&gt;Capture&lt;/code&gt; menu and &lt;code&gt;Interfaces...&lt;/code&gt; submenu to see the availiable devices for capturing data. I choosed &lt;code&gt;wlp8s0&lt;/code&gt; because it is my wireless network card and clicked 
+start in order to start seing traffic. In the window there&amp;#39;s a main list that shows every packet captured by Wireshark. Some of the shown packets will be generated by managing protocols that are encharged of asigning 
+network identifiers to every machine (IP addresses) among other... Other packets will be generated by programs trying to access internet resources as the users browsing the internet. &lt;/p&gt;
+
+&lt;p&gt;In my case, for demonstration purposes, I opened the browser and typed &lt;code&gt;192.168.1.1&lt;/code&gt; which is the router address and it asked me for a login and because I don&amp;#39;t know the credentials to login I just used &amp;quot;asd&amp;quot; as user 
+and password resulting in an access denial (Error 401). The moment I opened the router page a lot of packets were logged in Wireshark, too many for me to want to analyze them all, so I decided to filter them. In the 
+top left part of the window there&amp;#39;s a field with a &amp;quot;Filter:&amp;quot; label where I wrote &lt;code&gt;http&lt;/code&gt; and hit the &lt;code&gt;enter&lt;/code&gt; key. A lot of packets disapeared and among others in the list I could see one that showed a &amp;quot;401 Unauthorized&amp;quot; 
+message in the info field. After clicking on it with the right button I selected the &lt;code&gt;Follow TCP stream&lt;/code&gt; option from the list. This poped a window with the following text:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;GET / HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Authorization: Basic YXNkOmFzZA==
+Connection: keep-alive
+
+
+HTTP/1.1 401 Unauthorized
+Server: micro_httpd
+Cache-Control: no-cache
+Date: Sat, 08 Jan 2000 05:29:54 GMT
+WWW-Authenticate: Basic realm=&amp;quot;DSL Router&amp;quot;
+Content-Type: text/html
+Connection: close
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;lt;TITLE&amp;gt;&lt;/span&gt;401 Unauthorized&lt;span class=&quot;nt&quot;&gt;&amp;lt;/TITLE&amp;gt;&amp;lt;/HEAD&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;BODY&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;BGCOLOR=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#cc9999&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;H4&amp;gt;&lt;/span&gt;401 Unauthorized&lt;span class=&quot;nt&quot;&gt;&amp;lt;/H4&amp;gt;&lt;/span&gt;
+Authorization required.
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;HR&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ADDRESS&amp;gt;&amp;lt;A&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;HREF=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.acme.com/software/micro_httpd/&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;micro_httpd&lt;span class=&quot;nt&quot;&gt;&amp;lt;/A&amp;gt;&amp;lt;/ADDRESS&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This could be divided in two parts. A request that starts with the &lt;code&gt;GET&lt;/code&gt; method and a response with the &lt;code&gt;401&lt;/code&gt; error code. For anyone familiar with the basic authentication protocol there&amp;#39;s a field in the request that 
+contains a lot of information. The &lt;code&gt;Authorization: Basic YXNkOmFzZA==&lt;/code&gt; line contains the type of authentication and the user and password used to login encoded in base64. If you search Google for a base64 decoder you 
+will find a lot of them online and decoding &lt;code&gt;YXNkOmFzZA==&lt;/code&gt; results in &lt;code&gt;asd:asd&lt;/code&gt; which is the user and password used.&lt;/p&gt;
+
+&lt;p&gt;Plain text credentials is not the only problem here. You can see google query urls wich reveal the searches being done by people in the network, image urls from Google, Facebook and other pages... Even if a page 
+doesn&amp;#39;t let you see the images in the revealed urls, Wireshark lets you save the responses to that url queries in files. This can be simply done by clicking on &lt;code&gt;File&lt;/code&gt; -&amp;gt; &lt;code&gt;Export objects&lt;/code&gt; -&amp;gt; &lt;code&gt;HTTP&lt;/code&gt; and selecting a 
+folder. In that folder you&amp;#39;ll be able to see webpages, images and other files that had been transferred over the network.&lt;/p&gt;
+
+&lt;p&gt;Open networks are not secure at all and they sould not be used in public spots. Alternatives are not always ideal as Wireshark can decrypt WEP or WPA traffic. In my opinion the IEEE 802.11 should create a new kind of 
+network for universal access with something similar to a secret per client that should enable you to encrypt your packets in a way that other users can&amp;#39;t spy you. Maybe asymetric encryption could be used in a similar 
+way as it is used in SSL. What other solutions do you think there are?&lt;/p&gt;
+
+&lt;p&gt;I think Wireshark is a very powerfull tool that anyone can enjoy with little effort. A lot of tutorials and videos can be found around internet explaining many features that I&amp;#39;m sure you will find useful and 
+interesting. Please tell me if you find any other functionality that can reveal information from open networks so that everyone can use it!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>HackThisSite: Basic 02</title>
