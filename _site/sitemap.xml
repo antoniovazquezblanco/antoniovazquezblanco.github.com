@@ -2,9 +2,18 @@
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://antoniovazquezblanco.github.io</loc>
-		<lastmod>2014-08-07T16:33:56+02:00</lastmod>
+		<lastmod>2014-08-08T10:46:50+02:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
+	</url>
+	
+	<url>
+		<loc>https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-03.html</loc>
+		
+		<lastmod>2014-08-22T00:00:00+02:00</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
 	</url>
 	
 	<url>
@@ -101,7 +110,7 @@
 	<url>
 		<loc>https://antoniovazquezblanco.github.io/404.html</loc>
 		
-		<lastmod>2014-08-07</lastmod>
+		<lastmod>2014-08-08</lastmod>
 		
 		
 		<changefreq>monthly</changefreq>
@@ -114,7 +123,7 @@
 	<url>
 		<loc>https://antoniovazquezblanco.github.io/atom.xml</loc>
 		
-		<lastmod>2014-08-07</lastmod>
+		<lastmod>2014-08-08</lastmod>
 		
 		
 		<changefreq>weekly</changefreq>
@@ -127,7 +136,7 @@
 	<url>
 		<loc>https://antoniovazquezblanco.github.io/index.html</loc>
 		
-		<lastmod>2014-08-07</lastmod>
+		<lastmod>2014-08-08</lastmod>
 		
 		
 		<changefreq>monthly</changefreq>
@@ -140,7 +149,7 @@
 	<url>
 		<loc>https://antoniovazquezblanco.github.io/blog/index.html</loc>
 		
-		<lastmod>2014-08-07</lastmod>
+		<lastmod>2014-08-08</lastmod>
 		
 		
 		<changefreq>monthly</changefreq>
@@ -153,7 +162,7 @@
 	<url>
 		<loc>https://antoniovazquezblanco.github.io/sitemap.xml</loc>
 		
-		<lastmod>2014-08-07</lastmod>
+		<lastmod>2014-08-08</lastmod>
 		
 		
 		<changefreq>monthly</changefreq>
@@ -166,7 +175,7 @@
 	<url>
 		<loc>https://antoniovazquezblanco.github.io/blog/page2/index.html</loc>
 		
-		<lastmod>2014-08-07</lastmod>
+		<lastmod>2014-08-08</lastmod>
 		
 		
 		<changefreq>monthly</changefreq>

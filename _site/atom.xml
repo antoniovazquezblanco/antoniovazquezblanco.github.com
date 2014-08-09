@@ -3,13 +3,49 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="https://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
 	<link href="https://antoniovazquezblanco.github.io/"/>
-	<updated>2014-08-07T16:33:56+02:00</updated>
+	<updated>2014-08-08T10:46:50+02:00</updated>
 	<id>https://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
 		<email>antoniovazquezblanco@gmail.com</email>
 	</author>
 
+	
+	<entry>
+		<title>HackThisSite: Basic 03</title>
+		<link href="https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-03.html"/>
+		<updated>2014-08-22T00:00:00+02:00</updated>
+		<id>https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-03</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-08-22-HackThisSite_logo.jpg&quot; alt=&quot;hackthissitelogo&quot; title=&quot;HackThisSite logo&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;HackThisSite basic challenge number three. I hope someone likes trying to solve this challenges and enjoys learning basic tricks of computer security. If you have any doubts about why things work like that just ask in 
+the comments section!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2&gt;Requisites&lt;/h2&gt;
+
+&lt;p&gt;I understand that you know some basics about programming and that you know what PHP is from the previous challenge. In adition to that you should try to understand how the user can send information to a PHP page. HTML 
+forms should be familiar to you.&lt;/p&gt;
+
+&lt;h2&gt;Solution&lt;/h2&gt;
+
+&lt;p&gt;You must hover the hints for them to show so not to spoil people only reading the requisites section:&lt;/p&gt;
+
+&lt;h3 class=&quot;spoiler&quot;&gt;Hint 1: &lt;span&gt;As always look for information in the page source...&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h3 class=&quot;spoiler&quot;&gt;Hint 2: &lt;span&gt;The form contains sensible information...&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h3 class=&quot;spoiler&quot;&gt;Hint 3: &lt;span&gt;The form points to a password.php file...&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h3 class=&quot;spoiler&quot;&gt;Solution: &lt;span&gt;Append &quot;password.php&quot; to the current path and that page will return you the level password.&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h2&gt;Thoughts&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#39;ve already talked about uploading sensible information to webpages. Google is a very good friend for finding vulnerable sites with sensible information. As always you can find more about this in the &lt;a href=&quot;http://www.exploit-db.com/google-dorks/7/&quot;&gt;Google Hack 
+Database&lt;/a&gt; in the &lt;a href=&quot;http://www.exploit-db.com/&quot;&gt;Exploit Database webpage&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Open wireless networks</title>
