@@ -3,7 +3,7 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="https://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
 	<link href="https://antoniovazquezblanco.github.io/"/>
-	<updated>2014-09-04T13:31:53+02:00</updated>
+	<updated>2014-09-19T17:17:17+02:00</updated>
 	<id>https://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
@@ -12,11 +12,43 @@
 
 	
 	<entry>
+		<title>Ford Explorer: Pair a remote to the central locking system</title>
+		<link href="https://antoniovazquezblanco.github.io/blog/Ford-Explorer-Pair-a-remote-to-the-central-locking-system.html"/>
+		<updated>2014-09-19T00:00:00+02:00</updated>
+		<id>https://antoniovazquezblanco.github.io/blog/Ford-Explorer-Pair-a-remote-to-the-central-locking-system</id>
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Ford Explorer&quot; alt=&quot;fordexplorer&quot; src=&quot;/images/posts/2014-09-19-Ford_Explorer.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After my father bought a new car he stopped using his Ford Explorer. My sister now uses a car for going to work and asked me to use my old &lt;a href=&quot;https://www.google.es/search?q=Audi+80+b4+2.3e&quot;&gt;Audi 80 B4 2.3E&lt;/a&gt; so I started 
+using the Explorer which I found had some problems that I will be trying to fix. I would like to share my solutions to the problems of the car in case you find them usefull.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;After some time in the garage, the keyless unlock remote battery drained. In order to replace it I opened the remote by using a plektrum (no bolts). A knife may not be a very good idea because it can damage the plastic 
+case but it can also be used.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Keyless remote&quot; alt=&quot;keylessremote&quot; src=&quot;/images/posts/2014-09-19-Keyless_remote.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Battery type is CR2032 and it is normal to find them at watch workshops in Spain. You can also find them on the internet. Replacing it is very easy (beware of the polarity) and the remote can be closed.&lt;/p&gt;
+
+&lt;p&gt;After trying I found that the remote didn&amp;#39;t work so I searched the net. It turns out that after some time without battery the remote changes it&amp;#39;s security codes and you need to teach the car to answer to the new ones. 
+For pairing the remote to the car you must switch the ignition on and of 8 times and wait in the on position of the 8th attempt when you&amp;#39;ll hear the locking system close and open. Click any of the buttons of the remote 
+and the car will add it to the list of known devices. This sequence should be done in less than 10 seconds for it to work.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;on-off - on-off - on-off - on-off - on-off - on-off - on-off - on - lock sounds - press the buttons&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;From now on the car will answer to the remote signals!&lt;/p&gt;
+
+&lt;p&gt;I will need the few bucks I saved for gas because this car is really really thirsty. I also bought an ELM327 bluetooth adapter that I will use to analyze the consumption of the car among others. A friend is looking for 
+a mirror that I will be changing in future posts. Please, don&amp;#39;t hesitate to ask if you have any questions and feel free to comment!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>HackThisSite: Basic 03</title>
 		<link href="https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-03.html"/>
 		<updated>2014-08-22T00:00:00+02:00</updated>
 		<id>https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-03</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-08-22-HackThisSite_logo.jpg&quot; alt=&quot;hackthissitelogo&quot; title=&quot;HackThisSite logo&quot;&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;HackThisSite logo&quot; alt=&quot;hackthissitelogo&quot; src=&quot;/images/posts/2014-08-22-HackThisSite_logo.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;HackThisSite basic challenge number three. I hope someone likes trying to solve this challenges and enjoys learning basic tricks of computer security. If you have any doubts about why things work like that just ask in 
 the comments section!&lt;/p&gt;
@@ -52,7 +84,7 @@ Database&lt;/a&gt; in the &lt;a href=&quot;http://www.exploit-db.com/&quot;&gt;E
 		<link href="https://antoniovazquezblanco.github.io/blog/Open-wireless-networks.html"/>
 		<updated>2014-08-07T00:00:00+02:00</updated>
 		<id>https://antoniovazquezblanco.github.io/blog/Open-wireless-networks</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-08-07-Wifi_logo.jpg&quot; alt=&quot;wifi&quot; title=&quot;Wifi logo&quot;&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Wifi logo&quot; alt=&quot;wifi&quot; src=&quot;/images/posts/2014-08-07-Wifi_logo.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It is very common to find open wifi spots in airports, hotels, coffe shops... I understand that when you want universal internet access is tempting to use unencrypted a network but I find this very inconvinient because 
 this kind of networks are very insecure.&lt;/p&gt;
@@ -147,7 +179,7 @@ interesting. Please tell me if you find any other functionality that can reveal 
 		<link href="https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-02.html"/>
 		<updated>2014-07-19T00:00:00+02:00</updated>
 		<id>https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-02</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-07-19-HackThisSite_logo.jpg&quot; alt=&quot;hackthissitelogo&quot; title=&quot;HackThisSite logo&quot;&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;HackThisSite logo&quot; alt=&quot;hackthissitelogo&quot; src=&quot;/images/posts/2014-07-19-HackThisSite_logo.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Here you have some information about challenge basic number two. As in the first challenge here I explain what I believe the requisites are and some tips for solving the puzzle. Hope you like them.&lt;/p&gt;
 
@@ -253,7 +285,7 @@ complaints...&lt;/p&gt;
 		<link href="https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-01.html"/>
 		<updated>2014-07-04T00:00:00+02:00</updated>
 		<id>https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-01</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-07-04-HackThisSite_logo.jpg&quot; alt=&quot;hackthissitelogo&quot; title=&quot;HackThisSite logo&quot;&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;HackThisSite logo&quot; alt=&quot;hackthissitelogo&quot; src=&quot;/images/posts/2014-07-04-HackThisSite_logo.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I found &lt;a href=&quot;https://www.hackthissite.org/&quot;&gt;hackthissite.org&lt;/a&gt; quite long time ago when I was learning some basics of computer security and I really liked it. It is meant to reinforce theoretical knowledge with some 
 practice. It consists on a bunch of challenges that should be solved progressively.&lt;/p&gt;
@@ -296,7 +328,7 @@ found in &lt;a href=&quot;http://www.exploit-db.com/google-dorks/&quot;&gt;explo
 		<link href="https://antoniovazquezblanco.github.io/blog/Some-HTML-CSS-stuff-I-dont-like-translations.html"/>
 		<updated>2014-06-26T00:00:00+02:00</updated>
 		<id>https://antoniovazquezblanco.github.io/blog/Some-HTML-CSS-stuff-I-dont-like-translations</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-06-26-HTML_CSS_JS_logo.png&quot; alt=&quot;htmlcssjslogo&quot; title=&quot;HTML5, CSS3 and JS logos&quot;&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;HTML5, CSS3 and JS logos&quot; alt=&quot;htmlcssjslogo&quot; src=&quot;/images/posts/2014-06-26-HTML_CSS_JS_logo.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I never liked HTML or CSS too much. I have to say that althought they were easy for me to get started with them, I always found tricky to get some things well done. I have to say that HTML 5 standard did improve a lot 
 of aspects of this language but I see this technology too far from where it should be. Althought it has evolved there has been no interest in fixing some of the most basic issues of the standard among, in some cases, 
@@ -386,7 +418,7 @@ experience than me in this area.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/2014-06-22-HexEdit.png&quot; alt=&quot;hexeditor&quot; title=&quot;HexEdit&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;HexEdit&quot; alt=&quot;hexeditor&quot; src=&quot;/images/posts/2014-06-22-HexEdit.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hex editors can be very useful for some things but when you are trying to search for some file signatures and you have a list of over 50 of them, they become tedious and repetitive so in the past I started using the 
 &amp;quot;strings&amp;quot; command in order to find usual signatures like &amp;quot;sqfs&amp;quot; or its variants for squash filesystems. This enabled me to automate signature finding with bash scripts very easely.&lt;/p&gt;
@@ -493,7 +525,7 @@ due to misconfiguration. &lt;/p&gt;
 		<link href="https://antoniovazquezblanco.github.io/blog/New-InsydeH2O-BIOS-update-format.html"/>
 		<updated>2014-06-04T00:00:00+02:00</updated>
 		<id>https://antoniovazquezblanco.github.io/blog/New-InsydeH2O-BIOS-update-format</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-06-04-Insyde_logo.jpg&quot; alt=&quot;insydeh2o&quot; title=&quot;InsydeH2O logo&quot;&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;InsydeH2O logo&quot; alt=&quot;insydeh2o&quot; src=&quot;/images/posts/2014-06-04-Insyde_logo.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Some time ago I bought an Alienware M14xR2 as my last laptop broke down. Lately, Alienware published an update for my BIOS that I can&amp;#39;t burn in my computer because I only use Archlinux. By googling a bit I quickly 
 found a tool for burning the BIOS in a DOS command line but I would need to have a look to the &lt;a href=&quot;http://www.dell.com/support/drivers/es/es/esdhs1/DriverDetails/Product/alienware-m14x-r2?driverId=6CVT8&amp;amp;osCode=W764&amp;amp;fileId=3210572008&amp;amp;languageCode=es&amp;amp;categoryId=BI&quot;&gt;update package&lt;/a&gt;.&lt;/p&gt;
@@ -502,7 +534,7 @@ found a tool for burning the BIOS in a DOS command line but I would need to have
 
 &lt;p&gt;Just by executing the update file in a virtual machine in windows I soon figured out it was a self extracting package. I just searched %TEMP% files for the extracted version.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/2014-06-04-Self_extractor.png&quot; alt=&quot;selfextractor&quot; title=&quot;Self extractor...&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Self extractor&quot; alt=&quot;selfextractor&quot; src=&quot;/images/posts/2014-06-04-Self_extractor.png&quot; /&gt;&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;file *
 Ding.wav:         RIFF &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;little-endian&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; data, WAVE audio, Microsoft PCM, 16 bit, stereo 44100 Hz
 FlsHookDll.dll:   PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DLL&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;MS Windows
@@ -635,7 +667,7 @@ The latest version of binwalk now looks for MZ executables.&lt;/p&gt;
 		<link href="https://antoniovazquezblanco.github.io/blog/Multiple-security-flaws-in-Comtrend-router.html"/>
 		<updated>2014-05-20T00:00:00+02:00</updated>
 		<id>https://antoniovazquezblanco.github.io/blog/Multiple-security-flaws-in-Comtrend-router</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-05-20-Comtrend_C54APM.jpg&quot; alt=&quot;c54apmaccesspoint&quot; title=&quot;Conceptronic C54APM access point...&quot;&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Conceptronic C54APM access point&quot; alt=&quot;c54apmaccesspoint&quot; src=&quot;/images/posts/2014-05-20-Comtrend_C54APM.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Last summer I&amp;#39;ve been playing with an old access point I found among my unused devices. Although this is far away from being a top selling device I decided to investigate a bit in order to find security flaws on it.&lt;/p&gt;
 
@@ -668,7 +700,7 @@ The latest version of binwalk now looks for MZ executables.&lt;/p&gt;
 		<link href="https://antoniovazquezblanco.github.io/blog/Security-flaw-in-RomPager-webserver.html"/>
 		<updated>2014-05-18T00:00:00+02:00</updated>
 		<id>https://antoniovazquezblanco.github.io/blog/Security-flaw-in-RomPager-webserver</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-05-18-Allegro_software.png&quot; alt=&quot;allegrosoftware&quot; title=&quot;Allegro software&quot;&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Allegro software&quot; alt=&quot;allegrosoftware&quot; src=&quot;/images/posts/2014-05-18-Allegro_software.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;RomPager is a widely used embedded webserver. Playing around with an quite old but very widely used (or at least in Spain) ZyXEL P-660HW-D1 I could find an small bug in this software that leads to XSS and URL redirection.&lt;/p&gt;
 
@@ -693,7 +725,7 @@ discovered it had no CVE identifier so I requested one to MITRE.&lt;/p&gt;
 		<link href="https://antoniovazquezblanco.github.io/blog/Hello-world.html"/>
 		<updated>2014-04-18T00:00:00+02:00</updated>
 		<id>https://antoniovazquezblanco.github.io/blog/Hello-world</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;/images/posts/2014-04-18-Myself.png&quot; alt=&quot;antoniovazquezblanco&quot; title=&quot;Antonio Vázquez Blanco&quot;&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Antonio Vázquez Blanco&quot; alt=&quot;antoniovazquezblanco&quot; src=&quot;/images/posts/2014-04-18-Myself.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;#39;m an engineering undergraduate born in a &lt;a href=&quot;https://www.google.com/maps/place/Chantada&quot;&gt;small town called Chantada&lt;/a&gt;, that likes electronics and computer and if you ask me, I&amp;#39;m specially interested in the security area 
 and in robotics.  &lt;/p&gt;
