@@ -3,13 +3,51 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="https://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
 	<link href="https://antoniovazquezblanco.github.io/"/>
-	<updated>2014-10-05T12:11:33+02:00</updated>
+	<updated>2014-10-15T20:03:27+02:00</updated>
 	<id>https://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
 		<email>antoniovazquezblanco@gmail.com</email>
 	</author>
 
+	
+	<entry>
+		<title>DIY Microscope</title>
+		<link href="https://antoniovazquezblanco.github.io/blog/DIY-Microscope.html"/>
+		<updated>2014-10-15T00:00:00+02:00</updated>
+		<id>https://antoniovazquezblanco.github.io/blog/DIY-Microscope</id>
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;DIY Microscope&quot; alt=&quot;diymicroscope&quot; src=&quot;/images/posts/2014-10-15-DIY_Microscope.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When soldering small devices and when inspecting circuits I sometimes need some help because I&amp;#39;m not able to see as much as I would like to. I&amp;#39;ve built a simple and cheap microscope with CCTV lenses and a webcam in 
+order to make theese tasks easier.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;I&amp;#39;ve reused an old Logitech QuickCam Express and bought an ABS plastic case and a &lt;a href=&quot;http://www.dx.com/p/50mm-f1-4-c-mount-cctv-lens-set-w-macro-rings-for-milc-black-144836#.VD6bN-LwyCi&quot;&gt;50mm CCTV lenses&lt;/a&gt; in wich I 
+spent around 26€.&lt;/p&gt;
+
+&lt;p&gt;After taking appart all the pieces of the webcam I disposed everything except the image sensor. Lens rear cap was perfect as holder for the image sensor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Plastic Cage&quot; alt=&quot;plasticcage&quot; src=&quot;/images/posts/2014-10-15-Plastic_cage.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Plastic cage with rings&quot; alt=&quot;plasticcagerings&quot; src=&quot;/images/posts/2014-10-15-Cage_rings.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Image sensor&quot; alt=&quot;imgsensor&quot; src=&quot;/images/posts/2014-10-15-Image_sensor.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In my package there was two macro rings that I used to hold the lens to the plastic cage. Some glue helped to hold the rear cap to one of the rings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Image sensor&quot; alt=&quot;imgsensor&quot; src=&quot;/images/posts/2014-10-15-Almost_done.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can see the result in the following images. The first one was made 50cm from the surface and it was difficult to focus. Resolution is not high at all but enought.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Result&quot; alt=&quot;imgsensor&quot; src=&quot;/images/posts/2014-10-15-Result.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For being able to focus in shorter distances I had to pull 3mm back the image sensor. The result was a much easier to focus image at a 30cm distance wich is a surprisingly good result compared to what I really 
+expected. Here it is the image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Result&quot; alt=&quot;result2&quot; src=&quot;/images/posts/2014-10-15-Result_spacer.jpg&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Ford Explorer: Pair a remote to the central locking system</title>
