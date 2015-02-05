@@ -113,17 +113,17 @@ binary files.</p>
 
 DECIMAL    HEX        DESCRIPTION
 -------------------------------------------------------------------------------------------------------------------
-0          0x0        TP-Link firmware header, firmware version: 3.13.33, image version: <span class="s2">&quot;ver. 1.0&quot;</span>, product ID: 0x8410008, product version: 1, kernel load address: 0x80002000, kernel entry point: 0x801AA240, kernel 
+<span class="m">0</span>          0x0        TP-Link firmware header, firmware version: 3.13.33, image version: <span class="s2">&quot;ver. 1.0&quot;</span>, product ID: 0x8410008, product version: 1, kernel load address: 0x80002000, kernel entry point: 0x801AA240, kernel 
 offset: 512, kernel length: 813084, rootfs offset: 1048576, rootfs length: 2883584, bootloader offset: 0, bootloader length: 49140
-13392      0x3450     U-Boot boot loader reference
-14728      0x3988     uImage header, header size: 64 bytes, header CRC: 0xBA7F2047, created: Mon May  6 07:20:35 2013, image size: 34860 bytes, Data Address: 0x80010000, Entry Point: 0x80010000, data CRC: 0x263C3839, 
+<span class="m">13392</span>      0x3450     U-Boot boot loader reference
+<span class="m">14728</span>      0x3988     uImage header, header size: <span class="m">64</span> bytes, header CRC: 0xBA7F2047, created: Mon May  <span class="m">6</span> 07:20:35 2013, image size: <span class="m">34860</span> bytes, Data Address: 0x80010000, Entry Point: 0x80010000, data CRC: 0x263C3839, 
 OS: Linux, CPU: MIPS, image <span class="nb">type</span>: Firmware Image, compression <span class="nb">type</span>: lzma, image name: <span class="s2">&quot;u-boot image&quot;</span>
-14760      0x39A8     U-Boot boot loader reference
-14792      0x39C8     LZMA compressed data, properties: 0x5D, dictionary size: 33554432 bytes, uncompressed size: 99104 bytes
-131584     0x20200    TP-Link firmware header, firmware version: 3.13.33, image version: <span class="s2">&quot;ver. 1.0&quot;</span>, product ID: 0x8410008, product version: 1, kernel load address: 0x80002000, kernel entry point: 0x801AA240, kernel 
+<span class="m">14760</span>      0x39A8     U-Boot boot loader reference
+<span class="m">14792</span>      0x39C8     LZMA compressed data, properties: 0x5D, dictionary size: <span class="m">33554432</span> bytes, uncompressed size: <span class="m">99104</span> bytes
+<span class="m">131584</span>     0x20200    TP-Link firmware header, firmware version: 3.13.33, image version: <span class="s2">&quot;ver. 1.0&quot;</span>, product ID: 0x8410008, product version: 1, kernel load address: 0x80002000, kernel entry point: 0x801AA240, kernel 
 offset: 512, kernel length: 813084, rootfs offset: 1048576, rootfs length: 2883584, bootloader offset: 0, bootloader length: 0
-132096     0x20400    LZMA compressed data, properties: 0x5D, dictionary size: 33554432 bytes, uncompressed size: 2317284 bytes
-1180160    0x120200   Squashfs filesystem, little endian, version 4.0, compression: lzma, size: 2652846 bytes,  537 inodes, blocksize: 131072 bytes, created: Mon May  6 07:32:12 2013
+<span class="m">132096</span>     0x20400    LZMA compressed data, properties: 0x5D, dictionary size: <span class="m">33554432</span> bytes, uncompressed size: <span class="m">2317284</span> bytes
+<span class="m">1180160</span>    0x120200   Squashfs filesystem, little endian, version 4.0, compression: lzma, size: <span class="m">2652846</span> bytes,  <span class="m">537</span> inodes, blocksize: <span class="m">131072</span> bytes, created: Mon May  <span class="m">6</span> 07:32:12 2013
 </code></pre></div>
 <p>As you can see binwalk detects a lot of useful signatures and can also decompress them by using the parameter &quot;-e&quot;.</p>
 

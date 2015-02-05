@@ -81,18 +81,18 @@ found a tool for burning the BIOS in a DOS command line but I would need to have
 
 <p><img class="img img-rounded img-responsive center-block" title="Self extractor" alt="selfextractor" src="/images/posts/2014-06-04-Self_extractor.png" /></p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>file *
-Ding.wav:         RIFF <span class="o">(</span>little-endian<span class="o">)</span> data, WAVE audio, Microsoft PCM, 16 bit, stereo 44100 Hz
-FlsHookDll.dll:   PE32 executable <span class="o">(</span>DLL<span class="o">)</span> <span class="o">(</span>GUI<span class="o">)</span> Intel 80386, <span class="k">for </span>MS Windows
-FlsHook.exe:      PE32 executable <span class="o">(</span>GUI<span class="o">)</span> Intel 80386, <span class="k">for </span>MS Windows
-FWUpdLcl.exe:     PE32 executable <span class="o">(</span>console<span class="o">)</span> Intel 80386, <span class="k">for </span>MS Windows
-InsydeFlash.exe:  PE32 executable <span class="o">(</span>GUI<span class="o">)</span> Intel 80386, <span class="k">for </span>MS Windows
-iscflash.dll:     PE32 executable <span class="o">(</span>DLL<span class="o">)</span> <span class="o">(</span>GUI<span class="o">)</span> Intel 80386, <span class="k">for </span>MS Windows
-iscflash.sys:     PE32 executable <span class="o">(</span>native<span class="o">)</span> Intel 80386, <span class="k">for </span>MS Windows
-iscflashx64.sys:  PE32+ executable <span class="o">(</span>native<span class="o">)</span> x86-64, <span class="k">for </span>MS Windows
+Ding.wav:         RIFF <span class="o">(</span>little-endian<span class="o">)</span> data, WAVE audio, Microsoft PCM, <span class="m">16</span> bit, stereo <span class="m">44100</span> Hz
+FlsHookDll.dll:   PE32 executable <span class="o">(</span>DLL<span class="o">)</span> <span class="o">(</span>GUI<span class="o">)</span> Intel 80386, <span class="k">for</span> MS Windows
+FlsHook.exe:      PE32 executable <span class="o">(</span>GUI<span class="o">)</span> Intel 80386, <span class="k">for</span> MS Windows
+FWUpdLcl.exe:     PE32 executable <span class="o">(</span>console<span class="o">)</span> Intel 80386, <span class="k">for</span> MS Windows
+InsydeFlash.exe:  PE32 executable <span class="o">(</span>GUI<span class="o">)</span> Intel 80386, <span class="k">for</span> MS Windows
+iscflash.dll:     PE32 executable <span class="o">(</span>DLL<span class="o">)</span> <span class="o">(</span>GUI<span class="o">)</span> Intel 80386, <span class="k">for</span> MS Windows
+iscflash.sys:     PE32 executable <span class="o">(</span>native<span class="o">)</span> Intel 80386, <span class="k">for</span> MS Windows
+iscflashx64.sys:  PE32+ executable <span class="o">(</span>native<span class="o">)</span> x86-64, <span class="k">for</span> MS Windows
 isflashWin.bin:   MS-DOS executable
 platform.ini:     ASCII text, with CRLF line terminators
 platforms.ini:    ASCII text, with CRLF, CR line terminators
-xerces-c_2_7.dll: PE32 executable <span class="o">(</span>DLL<span class="o">)</span> <span class="o">(</span>GUI<span class="o">)</span> Intel 80386, <span class="k">for </span>MS Windows
+xerces-c_2_7.dll: PE32 executable <span class="o">(</span>DLL<span class="o">)</span> <span class="o">(</span>GUI<span class="o">)</span> Intel 80386, <span class="k">for</span> MS Windows
 </code></pre></div>
 <p>Ding.wav is just audio. I suppose it is played when flash is finished.
 Just by reading the header of the ini files we can guess they are configuration files for the flasher utility. The format is self explained in comments. In line 61 I found that the file I wanted for flashing was 
@@ -131,8 +131,8 @@ fPf3
 <span class="nv">ErrorMsg04</span><span class="o">=</span>BIOS version compare error!
 <span class="nv">ErrorMsg05</span><span class="o">=</span>Model name compare error!
 <span class="nv">ErrorMsg10</span><span class="o">=</span>Not support this version of Flash Common Interface!
-<span class="nv">ErrorMsg11</span><span class="o">=</span>Show BIOS version string length more <span class="k">then </span>xx bytes.
-<span class="nv">ErrorMsg12</span><span class="o">=</span>Show model name string length more <span class="k">then </span>xx bytes.
+<span class="nv">ErrorMsg11</span><span class="o">=</span>Show BIOS version string length more <span class="k">then</span> xx bytes.
+<span class="nv">ErrorMsg12</span><span class="o">=</span>Show model name string length more <span class="k">then</span> xx bytes.
 <span class="o">[</span>...<span class="o">]</span>
 </code></pre></div>
 <p>Inside the file I found a section that is exactly the same as the configuration file and it is preceded by a string quite suspicious.</p>
@@ -193,7 +193,7 @@ numbers. I&#39;ve done a simple python script (filesplitter) for splitting this 
 five:  data
 four:  ASCII text, with CRLF line terminators
 one:   MS-DOS executable
-three: Intel serial flash <span class="k">for </span>PCH ROM
+three: Intel serial flash <span class="k">for</span> PCH ROM
 two:   MS-DOS executable
 </code></pre></div>
 <p>Part number four is clearly the configuration file. If you are trying to tweak parameters in platform.ini note that it wont work, but if you modify this part of the binary file it will. It seems that Insyde is now 

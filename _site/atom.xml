@@ -3,13 +3,48 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="https://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
 	<link href="https://antoniovazquezblanco.github.io/"/>
-	<updated>2014-12-13T13:45:53+01:00</updated>
+	<updated>2015-02-05T14:37:09+01:00</updated>
 	<id>https://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
 		<email>antoniovazquezblanco@gmail.com</email>
 	</author>
 
+	
+	<entry>
+		<title>HackThisSite: Basic 04</title>
+		<link href="https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-04.html"/>
+		<updated>2015-02-05T00:00:00+01:00</updated>
+		<id>https://antoniovazquezblanco.github.io/blog/HackThisSite-Basic-04</id>
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;HackThisSite logo&quot; alt=&quot;hackthissitelogo&quot; src=&quot;/images/posts/2015-02-05-HackThisSite_logo.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Basic challenge four is another variation of the same history in the challenge number 3. If you reached this level you should have realised that you have very little information you can play with. This reduces the 
+problem to a simple analisys of the three or four lines of html that you are given.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2&gt;Requisites&lt;/h2&gt;
+
+&lt;p&gt;You should know what an HTML form is. If you reached this level you should be able to complete it. If you want to know more I encourage you to try to build a test page with a form.&lt;/p&gt;
+
+&lt;h2&gt;Solution&lt;/h2&gt;
+
+&lt;p&gt;You must hover the hints for them to show so not to spoil people only reading the requisites section:&lt;/p&gt;
+
+&lt;h3 class=&quot;spoiler&quot;&gt;Hint 1: &lt;span&gt;As always look for information in the page source...&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h3 class=&quot;spoiler&quot;&gt;Hint 2: &lt;span&gt;The form contains hidden fields...&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h3 class=&quot;spoiler&quot;&gt;Hint 3: &lt;span&gt;The form points to an email address...&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h3 class=&quot;spoiler&quot;&gt;Solution: &lt;span&gt;Modify the form in order to make the script send you the information&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h2&gt;Thoughts&lt;/h2&gt;
+
+&lt;p&gt;It is quite common to find hidden fields in forms and when pentesting a webpage it is important to check for information and weak spots in this fields. It is common to find hidden fields without proper sanitization 
+when visible fields are sanitized. This in some cases can be used for SQL injection attacks!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>CyberCamp 2014</title>
@@ -188,7 +223,7 @@ device or not. Monitor mode can be used to sniff others people traffic wich can 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo iwconfig
 wlp8s0    IEEE 802.11abgn  ESSID:&lt;span class=&quot;s2&quot;&gt;&amp;quot;Wifi-Usos&amp;quot;&lt;/span&gt;  
           Mode:Managed  Frequency:2.437 GHz  Access Point: 00:22:B0:6F:E7:74   
-          Bit &lt;span class=&quot;nv&quot;&gt;Rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;48 Mb/s   Tx-Power&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;17 dBm   
+          Bit &lt;span class=&quot;nv&quot;&gt;Rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;48&lt;/span&gt; Mb/s   Tx-Power&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;17&lt;/span&gt; dBm   
           Retry short limit:7   RTS thr:off   Fragment thr:off
           Encryption key:off
           Power Management:off
@@ -541,17 +576,17 @@ binary files.&lt;/p&gt;
 
 DECIMAL    HEX        DESCRIPTION
 -------------------------------------------------------------------------------------------------------------------
-0          0x0        TP-Link firmware header, firmware version: 3.13.33, image version: &lt;span class=&quot;s2&quot;&gt;&amp;quot;ver. 1.0&amp;quot;&lt;/span&gt;, product ID: 0x8410008, product version: 1, kernel load address: 0x80002000, kernel entry point: 0x801AA240, kernel 
+&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;          0x0        TP-Link firmware header, firmware version: 3.13.33, image version: &lt;span class=&quot;s2&quot;&gt;&amp;quot;ver. 1.0&amp;quot;&lt;/span&gt;, product ID: 0x8410008, product version: 1, kernel load address: 0x80002000, kernel entry point: 0x801AA240, kernel 
 offset: 512, kernel length: 813084, rootfs offset: 1048576, rootfs length: 2883584, bootloader offset: 0, bootloader length: 49140
-13392      0x3450     U-Boot boot loader reference
-14728      0x3988     uImage header, header size: 64 bytes, header CRC: 0xBA7F2047, created: Mon May  6 07:20:35 2013, image size: 34860 bytes, Data Address: 0x80010000, Entry Point: 0x80010000, data CRC: 0x263C3839, 
+&lt;span class=&quot;m&quot;&gt;13392&lt;/span&gt;      0x3450     U-Boot boot loader reference
+&lt;span class=&quot;m&quot;&gt;14728&lt;/span&gt;      0x3988     uImage header, header size: &lt;span class=&quot;m&quot;&gt;64&lt;/span&gt; bytes, header CRC: 0xBA7F2047, created: Mon May  &lt;span class=&quot;m&quot;&gt;6&lt;/span&gt; 07:20:35 2013, image size: &lt;span class=&quot;m&quot;&gt;34860&lt;/span&gt; bytes, Data Address: 0x80010000, Entry Point: 0x80010000, data CRC: 0x263C3839, 
 OS: Linux, CPU: MIPS, image &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;: Firmware Image, compression &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;: lzma, image name: &lt;span class=&quot;s2&quot;&gt;&amp;quot;u-boot image&amp;quot;&lt;/span&gt;
-14760      0x39A8     U-Boot boot loader reference
-14792      0x39C8     LZMA compressed data, properties: 0x5D, dictionary size: 33554432 bytes, uncompressed size: 99104 bytes
-131584     0x20200    TP-Link firmware header, firmware version: 3.13.33, image version: &lt;span class=&quot;s2&quot;&gt;&amp;quot;ver. 1.0&amp;quot;&lt;/span&gt;, product ID: 0x8410008, product version: 1, kernel load address: 0x80002000, kernel entry point: 0x801AA240, kernel 
+&lt;span class=&quot;m&quot;&gt;14760&lt;/span&gt;      0x39A8     U-Boot boot loader reference
+&lt;span class=&quot;m&quot;&gt;14792&lt;/span&gt;      0x39C8     LZMA compressed data, properties: 0x5D, dictionary size: &lt;span class=&quot;m&quot;&gt;33554432&lt;/span&gt; bytes, uncompressed size: &lt;span class=&quot;m&quot;&gt;99104&lt;/span&gt; bytes
+&lt;span class=&quot;m&quot;&gt;131584&lt;/span&gt;     0x20200    TP-Link firmware header, firmware version: 3.13.33, image version: &lt;span class=&quot;s2&quot;&gt;&amp;quot;ver. 1.0&amp;quot;&lt;/span&gt;, product ID: 0x8410008, product version: 1, kernel load address: 0x80002000, kernel entry point: 0x801AA240, kernel 
 offset: 512, kernel length: 813084, rootfs offset: 1048576, rootfs length: 2883584, bootloader offset: 0, bootloader length: 0
-132096     0x20400    LZMA compressed data, properties: 0x5D, dictionary size: 33554432 bytes, uncompressed size: 2317284 bytes
-1180160    0x120200   Squashfs filesystem, little endian, version 4.0, compression: lzma, size: 2652846 bytes,  537 inodes, blocksize: 131072 bytes, created: Mon May  6 07:32:12 2013
+&lt;span class=&quot;m&quot;&gt;132096&lt;/span&gt;     0x20400    LZMA compressed data, properties: 0x5D, dictionary size: &lt;span class=&quot;m&quot;&gt;33554432&lt;/span&gt; bytes, uncompressed size: &lt;span class=&quot;m&quot;&gt;2317284&lt;/span&gt; bytes
+&lt;span class=&quot;m&quot;&gt;1180160&lt;/span&gt;    0x120200   Squashfs filesystem, little endian, version 4.0, compression: lzma, size: &lt;span class=&quot;m&quot;&gt;2652846&lt;/span&gt; bytes,  &lt;span class=&quot;m&quot;&gt;537&lt;/span&gt; inodes, blocksize: &lt;span class=&quot;m&quot;&gt;131072&lt;/span&gt; bytes, created: Mon May  &lt;span class=&quot;m&quot;&gt;6&lt;/span&gt; 07:32:12 2013
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;As you can see binwalk detects a lot of useful signatures and can also decompress them by using the parameter &amp;quot;-e&amp;quot;.&lt;/p&gt;
 
@@ -624,18 +659,18 @@ found a tool for burning the BIOS in a DOS command line but I would need to have
 
 &lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;Self extractor&quot; alt=&quot;selfextractor&quot; src=&quot;/images/posts/2014-06-04-Self_extractor.png&quot; /&gt;&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;file *
-Ding.wav:         RIFF &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;little-endian&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; data, WAVE audio, Microsoft PCM, 16 bit, stereo 44100 Hz
-FlsHookDll.dll:   PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DLL&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;MS Windows
-FlsHook.exe:      PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;MS Windows
-FWUpdLcl.exe:     PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;console&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;MS Windows
-InsydeFlash.exe:  PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;MS Windows
-iscflash.dll:     PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DLL&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;MS Windows
-iscflash.sys:     PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;native&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;MS Windows
-iscflashx64.sys:  PE32+ executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;native&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; x86-64, &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;MS Windows
+Ding.wav:         RIFF &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;little-endian&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; data, WAVE audio, Microsoft PCM, &lt;span class=&quot;m&quot;&gt;16&lt;/span&gt; bit, stereo &lt;span class=&quot;m&quot;&gt;44100&lt;/span&gt; Hz
+FlsHookDll.dll:   PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DLL&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; MS Windows
+FlsHook.exe:      PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; MS Windows
+FWUpdLcl.exe:     PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;console&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; MS Windows
+InsydeFlash.exe:  PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; MS Windows
+iscflash.dll:     PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DLL&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; MS Windows
+iscflash.sys:     PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;native&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; MS Windows
+iscflashx64.sys:  PE32+ executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;native&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; x86-64, &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; MS Windows
 isflashWin.bin:   MS-DOS executable
 platform.ini:     ASCII text, with CRLF line terminators
 platforms.ini:    ASCII text, with CRLF, CR line terminators
-xerces-c_2_7.dll: PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DLL&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;MS Windows
+xerces-c_2_7.dll: PE32 executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DLL&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GUI&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; MS Windows
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Ding.wav is just audio. I suppose it is played when flash is finished.
 Just by reading the header of the ini files we can guess they are configuration files for the flasher utility. The format is self explained in comments. In line 61 I found that the file I wanted for flashing was 
@@ -674,8 +709,8 @@ fPf3
 &lt;span class=&quot;nv&quot;&gt;ErrorMsg04&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;BIOS version compare error!
 &lt;span class=&quot;nv&quot;&gt;ErrorMsg05&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Model name compare error!
 &lt;span class=&quot;nv&quot;&gt;ErrorMsg10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Not support this version of Flash Common Interface!
-&lt;span class=&quot;nv&quot;&gt;ErrorMsg11&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Show BIOS version string length more &lt;span class=&quot;k&quot;&gt;then &lt;/span&gt;xx bytes.
-&lt;span class=&quot;nv&quot;&gt;ErrorMsg12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Show model name string length more &lt;span class=&quot;k&quot;&gt;then &lt;/span&gt;xx bytes.
+&lt;span class=&quot;nv&quot;&gt;ErrorMsg11&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Show BIOS version string length more &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt; xx bytes.
+&lt;span class=&quot;nv&quot;&gt;ErrorMsg12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Show model name string length more &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt; xx bytes.
 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;...&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Inside the file I found a section that is exactly the same as the configuration file and it is preceded by a string quite suspicious.&lt;/p&gt;
@@ -736,7 +771,7 @@ numbers. I&amp;#39;ve done a simple python script (filesplitter) for splitting t
 five:  data
 four:  ASCII text, with CRLF line terminators
 one:   MS-DOS executable
-three: Intel serial flash &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;PCH ROM
+three: Intel serial flash &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; PCH ROM
 two:   MS-DOS executable
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Part number four is clearly the configuration file. If you are trying to tweak parameters in platform.ini note that it wont work, but if you modify this part of the binary file it will. It seems that Insyde is now 
