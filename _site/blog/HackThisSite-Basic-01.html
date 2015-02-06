@@ -14,10 +14,11 @@
 	<link href="/css/pygments-1.0.min.css" rel="stylesheet">
 	<link href="/css/general-1.0.min.css" rel="stylesheet">
 	
-	<link href="/css/bg_blue-1.0.min.css" rel="stylesheet">
+	<link href="/css/bg_red-1.0.min.css" rel="stylesheet">
 	<!-- Javascript -->
 	<script src="/js/jquery-2.1.0.min.js"></script>
 	<script src="/js/bootstrap-3.0.2.min.js"></script>
+	<script src="/js/spoiler.js"></script>
 </head>
 
   <body>
@@ -88,15 +89,49 @@ images listing some elements and linking to other webpages if you don&#39;t know
 
 <h2>Solution</h2>
 
-<p>You must hover the hints for them to show so not to spoil people only reading the requisites section:</p>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <button type="button" class="btn btn-default btn-xs spoiler-trigger" data-toggle="collapse">Hint 1</button>
+    </div>
+    <div class="panel-collapse collapse out">
+        <div class="panel-body">
+            <p>There's not much you can do. Try to understand how things work.</p>
+        </div>
+    </div>
+</div>
 
-<h3 class="spoiler">Hint 1: <span>There's not much you can do. Try to understand how things work.</span></h3>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <button type="button" class="btn btn-default btn-xs spoiler-trigger" data-toggle="collapse">Hint 2</button>
+    </div>
+    <div class="panel-collapse collapse out">
+        <div class="panel-body">
+            <p>For understanding how things work you must look at the html code.</p>
+        </div>
+    </div>
+</div>
 
-<h3 class="spoiler">Hint 2: <span>For understanding how things work you must look at the html code.</span></h3>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <button type="button" class="btn btn-default btn-xs spoiler-trigger" data-toggle="collapse">Hint 3</button>
+    </div>
+    <div class="panel-collapse collapse out">
+        <div class="panel-body">
+            <p>Look up in google what an html comment is...</p>
+        </div>
+    </div>
+</div>
 
-<h3 class="spoiler">Hint 3: <span>Look up in google what an html comment is...</span></h3>
-
-<h3 class="spoiler">Solution: <span>In the html code there's a comment saying "pasword is..."</span></h3>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <button type="button" class="btn btn-default btn-xs spoiler-trigger" data-toggle="collapse">Solution</button>
+    </div>
+    <div class="panel-collapse collapse out">
+        <div class="panel-body">
+            <p>In the html code there's a comment saying "pasword is..."</p>
+        </div>
+    </div>
+</div>
 
 <h2>Thoughts</h2>
 

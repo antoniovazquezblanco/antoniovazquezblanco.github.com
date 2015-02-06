@@ -3,7 +3,7 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="https://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
 	<link href="https://antoniovazquezblanco.github.io/"/>
-	<updated>2015-02-06T15:06:41+01:00</updated>
+	<updated>2015-02-06T15:46:38+01:00</updated>
 	<id>https://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
@@ -29,15 +29,49 @@ problem to a simple analisys of the three or four lines of html that you are giv
 
 &lt;h2&gt;Solution&lt;/h2&gt;
 
-&lt;p&gt;You must hover the hints for them to show so not to spoil people only reading the requisites section:&lt;/p&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 1&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;As always look for information in the page source...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 1: &lt;span&gt;As always look for information in the page source...&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 2&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;The form contains hidden fields...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 2: &lt;span&gt;The form contains hidden fields...&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 3&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;The form points to an email address...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 3: &lt;span&gt;The form points to an email address...&lt;/span&gt;&lt;/h3&gt;
-
-&lt;h3 class=&quot;spoiler&quot;&gt;Solution: &lt;span&gt;Modify the form in order to make the script send you the information&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Solution&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;Modify the form in order to make the script send you the information.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h2&gt;Thoughts&lt;/h2&gt;
 
@@ -185,15 +219,49 @@ forms should be familiar to you.&lt;/p&gt;
 
 &lt;h2&gt;Solution&lt;/h2&gt;
 
-&lt;p&gt;You must hover the hints for them to show so not to spoil people only reading the requisites section:&lt;/p&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 1&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;As always look for information in the page source...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 1: &lt;span&gt;As always look for information in the page source...&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 2&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;The form contains sensible information...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 2: &lt;span&gt;The form contains sensible information...&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 3&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;The form points to a password.php file...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 3: &lt;span&gt;The form points to a password.php file...&lt;/span&gt;&lt;/h3&gt;
-
-&lt;h3 class=&quot;spoiler&quot;&gt;Solution: &lt;span&gt;Append &quot;password.php&quot; to the current path and that page will return you the level password.&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Solution&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;Append &quot;password.php&quot; to the current path and that page will return you the level password.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h2&gt;Thoughts&lt;/h2&gt;
 
@@ -317,15 +385,49 @@ trying to improve on your own. As always if you get stuck with any of this, feel
 
 &lt;h2&gt;Solution&lt;/h2&gt;
 
-&lt;p&gt;You must hover the hints for them to show so not to spoil people only reading the requisites section:&lt;/p&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 1&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;Read carefully the notes on the level...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 1: &lt;span&gt;Read carefully the notes on the level...&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 2&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;Think about how would you do a program that achieves the same as this level...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 2: &lt;span&gt;Think about how would you do a program that achieves the same as this level...&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 3&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;What the content of a file that doesn&#39;t exist can be?&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 3: &lt;span&gt;What the content of a file that doesn&#39;t exist can be?&lt;/span&gt;&lt;/h3&gt;
-
-&lt;h3 class=&quot;spoiler&quot;&gt;Solution: &lt;span&gt;There&#39;s no password. Just click submit with an empty password. When the program tries to read the password a null value or an empty string is returned so we have to send an empty string in order to bypass some kind of conditional statement.&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Solution&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;There&#39;s no password. Just click submit with an empty password. When the program tries to read the password a null value or an empty string is returned so we have to send an empty string in order to bypass some kind of conditional statement.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h2&gt;Thoughts&lt;/h2&gt;
 
@@ -426,15 +528,49 @@ images listing some elements and linking to other webpages if you don&amp;#39;t 
 
 &lt;h2&gt;Solution&lt;/h2&gt;
 
-&lt;p&gt;You must hover the hints for them to show so not to spoil people only reading the requisites section:&lt;/p&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 1&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;There&#39;s not much you can do. Try to understand how things work.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 1: &lt;span&gt;There&#39;s not much you can do. Try to understand how things work.&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 2&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;For understanding how things work you must look at the html code.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 2: &lt;span&gt;For understanding how things work you must look at the html code.&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Hint 3&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;Look up in google what an html comment is...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;spoiler&quot;&gt;Hint 3: &lt;span&gt;Look up in google what an html comment is...&lt;/span&gt;&lt;/h3&gt;
-
-&lt;h3 class=&quot;spoiler&quot;&gt;Solution: &lt;span&gt;In the html code there&#39;s a comment saying &quot;pasword is...&quot;&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs spoiler-trigger&quot; data-toggle=&quot;collapse&quot;&gt;Solution&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse out&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;In the html code there&#39;s a comment saying &quot;pasword is...&quot;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h2&gt;Thoughts&lt;/h2&gt;
 
