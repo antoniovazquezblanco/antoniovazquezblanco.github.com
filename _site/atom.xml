@@ -3,13 +3,34 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="https://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
 	<link href="https://antoniovazquezblanco.github.io/"/>
-	<updated>2015-02-20T23:57:48+01:00</updated>
+	<updated>2015-02-28T18:59:38+01:00</updated>
 	<id>https://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
 		<email>antoniovazquezblanco@gmail.com</email>
 	</author>
 
+	
+	<entry>
+		<title>KiCad libraries</title>
+		<link href="https://antoniovazquezblanco.github.io/blog/KiCad-libraries.html"/>
+		<updated>2015-02-28T00:00:00+01:00</updated>
+		<id>https://antoniovazquezblanco.github.io/blog/KiCad-libraries</id>
+		<content type="html">&lt;p&gt;I&amp;#39;ve recently started working on some circuits with a friend and I would like to share some of the work.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Among the different options we chose to use KiCad because it is free and it seems that it&amp;#39;s comunity has been growing lately. It would be nicer if they used Git instead of Bzr and they need to make a &amp;quot;release&amp;quot; soon because the latest stable build is from 2013 and a lot of changes have been introduced since then. If you ask me I would stick to the stable release because gerber files generated with the development version don&amp;#39;t work in some PCB prototyping webpages such as in &lt;a href=&quot;http://www.seeedstudio.com/service/index.php?r=pcb&quot;&gt;Seeedstudio Fusion&lt;/a&gt; or &lt;a href=&quot;https://oshpark.com/&quot;&gt;OSH Park&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;KiCad MPCI-E footprint.&quot; alt=&quot;kicadmpciefootprint&quot; src=&quot;/images/posts/2015-02-28-KiCad_libraries.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Although KiCad has a fairly big component library and that there are a lot of components on the internet, we weren&amp;#39;t able to find some components for the stable version of KiCad. I&amp;#39;ve uploaded those to &lt;a href=&quot;https://github.com/search?q=user%3Aantoniovazquezblanco+kicad_*&quot;&gt;repositories in my GitHub account&lt;/a&gt;. Remember they&amp;#39;re in a &amp;quot;BETA&amp;quot; stage because they haven&amp;#39;t been properly tested. I will be updating them if I found any bugs!&lt;/p&gt;
+
+&lt;p&gt;By the way, I use them by adding a library folder in my project and adding the components I need as git submodules.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/search?q=user%3Aantoniovazquezblanco+kicad_*&quot;&gt;KiCad libraries&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>HackThisSite: Basic 04</title>
