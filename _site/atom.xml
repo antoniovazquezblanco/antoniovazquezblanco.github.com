@@ -3,13 +3,71 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="https://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
 	<link href="https://antoniovazquezblanco.github.io/"/>
-	<updated>2015-03-05T20:05:32+01:00</updated>
+	<updated>2015-03-14T00:48:24+01:00</updated>
 	<id>https://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
 		<email>antoniovazquezblanco@gmail.com</email>
 	</author>
 
+	
+	<entry>
+		<title>Android fastboot and CWMR porting</title>
+		<link href="https://antoniovazquezblanco.github.io/blog/Android-fastboot-and-CWMR-porting.html"/>
+		<updated>2015-03-14T00:00:00+01:00</updated>
+		<id>https://antoniovazquezblanco.github.io/blog/Android-fastboot-and-CWMR-porting</id>
+		<content type="html">&lt;p&gt;&lt;img class=&quot;img img-rounded img-responsive center-block&quot; title=&quot;ClockworkMod Recovery logo&quot; alt=&quot;clockworkmodrecovery&quot; src=&quot;/images/posts/2015-03-14-ClockworkMod.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve recently acquired a Huawei Ascend P7 and as any other Android phone, it comes with tons of software, not only from Huawei but also from my telephone provider. I don&amp;#39;t know about you, but rooting the phone for 
+removing this software among applying other patches and even testing homemade solutions when no information is available on the internet is something I do quite often. I&amp;#39;m not going to lie, I&amp;#39;ve bricked more than one 
+device by playing with it and this has taught me to backup before touching.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;After rooting the phone I always try to dump the boot, recovery and system partitions. In case anything goes wrong I can always use fastboot to reflash the partitions and go back to a working state. Fortunately if you 
+update the Ascend P7-L10 the bootloader is automatically unlocked enabling me to flash non standard images which encouraged me to start playing a bit further with the phone. You should know that many other 
+manufacturers let you unlock your bootloaders, if you&amp;#39;re interested on this just Google it or ask in a comment.&lt;/p&gt;
+
+&lt;p&gt;If everything is done properly, the following command should show a list of the connected devices. If not, you should check if you have the ADK installed and if your phone is rebooted in fastboot mode.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;fastboot devices
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Fastboot lets you boot images without flashing them and that is great for testing! I will not break my phone because nothing will be saved! Good news, I can try to port ClockworkMod Recovery to my phone because 
+although I will make mistakes that would probably brick the phone, I can run things safely on my phone.&lt;/p&gt;
+
+&lt;p&gt;Using the following tutorials I&amp;#39;ve created a Github repo for anyone who wants to collaborate in the porting of CyanogenMod to the Huawei Ascend P7:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.cyanogenmod.org/w/Doc:_porting_intro&quot;&gt;CyanogenMod Wiki Porting Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://forum.xda-developers.com/showpost.php?p=36162245&amp;amp;postcount=2&quot;&gt;XDA Developers thread on porting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For anyone interested here are the commands needed for downloading the source code and building the recovery for the Ascend P7. Beware that this is not in any kind of usable state at the moment!&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# # Download the repo tool...&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# curl https://storage.googleapis.com/git-repo-downloads/repo &amp;gt; /bin/repo&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# chmod a+x /bin/repo&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Create a folder for the source code...&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir CyanogenMod
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;CyanogenMod
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Initialize the repository...&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;repo init -u https://github.com/CyanogenMod/android.git -b cm-11.0
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Add the Ascend P7 manifest to the project...&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir .repo/local_manifests
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;curl https://raw.githubusercontent.com/antoniovazquezblanco/android_device_huawei_hwp7/master/manifest_android_device_huawei_hwp7.xml &amp;gt; .repo/local_manifests/manifest_android_device_huawei_hwp7.xml
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Get the code...&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;repo sync
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In order to build the recovery.img you must execute the following commands.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;. build/envsetup.sh
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;lunch cm_hwp7-userdebug
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make recoveryimage
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you&amp;#39;re brave enough to test it just type the following commands.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;adb reboot bootloader
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;fastboot boot out/target/product/hwp7/recovery.img
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;PD: I&amp;#39;ve been unable to boot or flash anything through fastboot because although the phone shows unlocked status I always get permission errors. I hope I can solve this soon so that I can get to really port the recovery to my device. If anyone feels that can help me with this issue I would be very pleased!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>HackThisSite: Basic 05</title>
