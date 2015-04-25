@@ -3,13 +3,34 @@
 	<title>Antonio Vázquez Blanco</title>
 	<link href="https://antoniovazquezblanco.github.io/atom.xml" rel="self"/>
 	<link href="https://antoniovazquezblanco.github.io/"/>
-	<updated>2015-03-14T00:48:24+01:00</updated>
+	<updated>2015-04-25T11:54:16+02:00</updated>
 	<id>https://antoniovazquezblanco.github.io</id>
 	<author>
 		<name>Antonio Vázquez Blanco</name>
 		<email>antoniovazquezblanco@gmail.com</email>
 	</author>
 
+	
+	<entry>
+		<title>GPS DOP Analyzer</title>
+		<link href="https://antoniovazquezblanco.github.io/blog/GPS-DOP-Analyzer.html"/>
+		<updated>2015-04-25T00:00:00+02:00</updated>
+		<id>https://antoniovazquezblanco.github.io/blog/GPS-DOP-Analyzer</id>
+		<content type="html">&lt;p&gt;This semester I&amp;#39;ve enrolled in a satellite navigation fundamentals course that required a final assignment in order to pass. With the help of some colleges we coded a Matlab user interface that takes a SEM almanac and plots the dilution of precision in multiple points of the earth surface.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;img class=&quot;img img-rounded img-responsive center-block&quot; style=&quot;width:70%&quot; title=&quot;DOP Analyzer&quot; alt=&quot;dopanalyzer&quot; src=&quot;/images/posts/2015-04-25-DOP_Analyzer.jpg&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The program is able to calculate the DOP in any time you specify but beware that SEM almanacs do not provide good approximations of satellite positions in instants far away from the time of applicability of the almanac. You can also select in how many points you want to divide the earth in order to provide more accurate results or get faster calculation times. In case the map is not precise enough you can query the DOP value from the coordinates you&amp;#39;re interested in. Maps can be rendered in 2D or 3D and with or without satellite positions.  &lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve found the assignment very appropriate for us to learn new things and really enjoyed building this tool but there are some things that I would like to change. Because time was critical and we had access to Matlab installations we used this tool although I would really like to port this to something more open like C or Python for anyone to be able to use it and experiment although it will not be a trivial task because of the plotting functions.  &lt;/p&gt;
+
+&lt;p&gt;Meanwhile for anyone interested the latest code will be on a &lt;a href=&quot;https://github.com/antoniovazquezblanco/DOP-Analyzer&quot;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Android fastboot and CWMR porting</title>
